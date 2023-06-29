@@ -1,13 +1,13 @@
 #!/bin/bash
 
-IMGH1=$(./get_wallpaper.sh "$HOME/.config/wallpapers/horizontal")
-IMGH2=$(./get_wallpaper.sh "$HOME/.config/wallpapers/horizontal")
-IMGV=$(./get_wallpaper.sh "$HOME/.config/wallpapers/vertical")
+IMGH1=$($HOME/.config/wallpapers/get_wallpaper.sh "$HOME/.config/wallpapers/horizontal")
+IMGH2=$($HOME/.config/wallpapers/get_wallpaper.sh "$HOME/.config/wallpapers/horizontal")
+IMGV=$($HOME/.config/wallpapers/get_wallpaper.sh "$HOME/.config/wallpapers/vertical")
 
 # ensure that the vertical images differ
 while [ "$IMGH1" = "$IMGH2" ];
 do
-    IMGH2=$(./get_wallpaper.sh "horizontal")
+    IMGH2=$($HOME/.config/wallpapers/get_wallpaper.sh "horizontal")
 done
 
 # first , than eDP, than DP
