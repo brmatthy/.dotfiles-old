@@ -40,3 +40,7 @@ emplace the dotfiles
 - Jetbrains mono nerd font
 - FontAwesome
 - [Wifi ramp icon font](https://github.com/isaif/polybar-wifi-ramp-icons)
+
+## Set keyboard
+localectl set-keymap --no-convert wangbe
+localectl set-x11-keymap --no-convert be
