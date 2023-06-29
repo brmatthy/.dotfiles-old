@@ -35,3 +35,8 @@ emplace the dotfiles
 ```sh
 ./setup.sh
 ```
+
+## Install fonts
+- Jetbrains mono nerd font
+- FontAwesome
+- [Wifi ramp icon font](https://github.com/isaif/polybar-wifi-ramp-icons)
