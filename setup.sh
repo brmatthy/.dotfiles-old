@@ -39,4 +39,4 @@ main() {
 }
 
 # add names of config dirs to include
-main "rofi" "i3" "polybar"
+main "rofi" "i3" "polybar" "wallpapers"
