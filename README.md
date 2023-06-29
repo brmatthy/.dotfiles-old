@@ -14,7 +14,9 @@ make sure to install the following packages and software
 - ligthdm-gtk-greeter
 - git
 - neofetch
-- autorandr
+- autorandr // save and auto apply multi head
+- feh // wallpapers
+- xorg-xset // disable beep sound
 
 #### programs
 - firefox
