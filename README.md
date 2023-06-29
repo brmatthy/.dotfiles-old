@@ -14,12 +14,15 @@ make sure to install the following packages and software
 - ligthdm-gtk-greeter
 - git
 - neofetch
+- autorandr
 
 #### programs
 - firefox
 - bitwarden
 - spotify
 - discord
+- arandr
+- pavucontrol
 
 ## Install dotfiles
 clone this repo
