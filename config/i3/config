@@ -48,7 +48,7 @@ set $mantle    #292c3c
 set $crust     #232634
 
 # class                 border          backgr.         text    indicator       child_border
-client.focused          $green          $base           $text   $green          $green
+client.focused          $peach          $base           $text   $peach          $peach
 client.focused_inactive $surface2       $surface2       $text   $surface2       $surface2
 client.unfocused        $base           $base           $text   $base           $base
 client.urgent           $red            $base           $red    $red            $red
@@ -160,7 +160,7 @@ bindsym $mod+F11 fullscreen toggle
 bindsym $mod+g floating toggle
 
 # launch brave browser
-bindsym $mod+b exec brave-browser
+bindsym $mod+b exec firefox 
 
 # launch file manager
 bindsym $mod+f exec nautilus
