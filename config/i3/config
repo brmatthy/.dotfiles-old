@@ -163,7 +163,7 @@ bindsym $mod+g floating toggle
 bindsym $mod+b exec firefox 
 
 # launch file manager
-bindsym $mod+f exec nautilus
+bindsym $mod+f exec thunar
 
 # launch settings
 #bindsym $mod+s exec gnome-control-center
