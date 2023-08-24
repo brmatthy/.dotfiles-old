@@ -1,0 +1,23 @@
+Program installer.
+
+Usage:
+    Calling the script will show the help message.
+    By adding options one can acctually install programs.
+
+Options:
+    -a --all            Install all programs.
+    -b --bitwarden      Install bitwarden.
+    -d --discord        Install discord.
+    -f --firefox        Install firefox.
+    --git               Install git.
+    --gnome             Install gnome.
+    -i --inkscape       Install inkscape.
+    --jetbrains-toolbox Install jetbrains-toolbox.
+    --joplin            Install joplin.
+    --neofetch          Install neofetch.
+    --nvim              Install nvim.
+    -o --ondrive        Install ondrive cli client.
+    -p --pop-shell      Install pop_os! shell.
+    -r --ranger         Install ranger.
+    --spicetify         Install spicetify.
+    --spotify           Install spotify.

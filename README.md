@@ -62,3 +62,5 @@ This way you can install only some programs.
 - [onedrive-cli-client](https://github.com/abraunegg/onedrive)
 - [ranger](https://github.com/ranger/ranger)
 - [inkscape](https://inkscape.org/)
+
+If you add a programm please add it to this list, to all the program install scripts and the program help message.
