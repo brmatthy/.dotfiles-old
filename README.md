@@ -11,9 +11,21 @@ Having gnome installed prior to installing the dotfiles is advised, but not need
 
 ## Installation
 
-The installation process is split into two steps.
+The installation process is split into three steps.
 
-### Install dotfiles
+
+### 1. Clone repo
+
+First clone this repo locally
+
+```sh
+git clone git@github.com:brmatthy/.dotfiles.git
+```
+
+Make sure that the repo is cloned to `$HOME/.dotfiles`. Otherwise the
+installation will fail.
+
+### 2. Install dotfiles
 First the dotfiles can be installed. This can be done by running the following command.
 
 ```sh
@@ -22,7 +34,7 @@ First the dotfiles can be installed. This can be done by running the following c
 
 This will install all the dotfiles. Even of programs that are not installed yet. Under the hood symmlinks will be created on the expected dotfile locations to this repo. Thus deleting this repo will break all your configurations.
 
-### Install programs
+### 3. Install programs
 
 Next one can install the programs that use the dotfiles.
 Depending on the OS you are using please use a different install script.
