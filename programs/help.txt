@@ -11,6 +11,7 @@ Options:
     -f --firefox        Install firefox.
     --git               Install git.
     --gnome             Install gnome.
+    -h --help           Show this help message.
     -i --inkscape       Install inkscape.
     --jetbrains-toolbox Install jetbrains-toolbox.
     --joplin            Install joplin.
