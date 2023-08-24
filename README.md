@@ -7,7 +7,7 @@ This dotfiles repo contains all my personal dotfiles, scripts to install them, a
 These dotfiles are for a [gnome](https://www.gnome.org/) install combined with the [pop_os! shell](https://github.com/pop-os/shell) to obtain tiling windows. The entire desktop and programs follow the 
 [catppuccin theme](https://github.com/catppuccin/catppuccin). This with the `Frappé - Peach` palette.
 
-Having gnome installed prior to installing the dotfiles is advised, but not needed.
+Having `gnome` installed prior to installing the dotfiles is a requirement. The `gnome-extra` package is no requirement. 
 
 ## Installation
 
@@ -48,12 +48,15 @@ programs/install_osname.sh
 If no install script is available for your distribution, please create one. Before doing so please read the [programs readme](/programs/README.md). Currently the following distributions are supported
 
 #### Fedora
+Some programs will use [snap](https://snapcraft.io/docs/installing-snapd) for installation. Please ensure that it is installed prior.
 ```sh
 ./programs/install_fedora.sh
 ```
 
 
 ## Programs
+
+### Auto install
 Here is a list of the programs that will be installed.
 Please use the `-h` option to see all the install options.
 This way you can install only some programs.
@@ -67,7 +70,6 @@ This way you can install only some programs.
 - [spicetify](https://spicetify.app/)
 - [discord](https://discord.com/)
 - [zsh](https://www.zsh.org/)
-- [jetbrains-toolbox](https://www.jetbrains.com/toolbox-app/)
 - [joplin](https://joplinapp.org/)
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [nvim](https://github.com/neovim/neovim)
@@ -75,4 +77,12 @@ This way you can install only some programs.
 - [ranger](https://github.com/ranger/ranger)
 - [inkscape](https://inkscape.org/)
 
+
 If you add a programm please add it to this list, to all the program install scripts and the program help message.
+
+### Manual install
+Some programs use less conventional methods of installing.
+Please install them manually.
+
+- [jetbrains-toolbox](https://www.jetbrains.com/toolbox-app/):
+    *[guide](https://www.jetbrains.com/help/idea/installation-guide.html#61320ad4)*

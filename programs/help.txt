@@ -9,12 +9,10 @@ Options:
     -b --bitwarden      Install bitwarden.
     -d --discord        Install discord.
     -f --firefox        Install firefox.
-    --git               Install git.
-    --gnome             Install gnome.
+    -g --git            Install git.
     -h --help           Show this help message.
     -i --inkscape       Install inkscape.
-    --jetbrains-toolbox Install jetbrains-toolbox.
-    --joplin            Install joplin.
+    -j --joplin         Install joplin.
     --neofetch          Install neofetch.
     --nvim              Install nvim.
     -o --ondrive        Install ondrive cli client.
