@@ -10,6 +10,11 @@ install_bitwarden() {
     sudo snap install bitwarden
 }
 
+# Install Visual studio code
+install_vsc() {
+    sudo dnf install code
+}
+
 # Install Discord
 install_discord() {
     sudo snap install discord
@@ -84,6 +89,9 @@ else
                 ;;
             -b|--bitwarden)
                 install_bitwarden
+                ;;
+            -c|--code)
+                install_vsc
                 ;;
             -d|--discord)
                 install_discord

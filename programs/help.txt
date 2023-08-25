@@ -7,6 +7,7 @@ Usage:
 Options:
     -a --all            Install all programs.
     -b --bitwarden      Install bitwarden.
+    -c --code           Install visual studio code.
     -d --discord        Install discord.
     -f --firefox        Install firefox.
     -g --git            Install git.
