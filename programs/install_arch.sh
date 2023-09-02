@@ -40,23 +40,33 @@ install_nvim() {
     sudo pacman -S neovim
 }
 
+# Install Alacritty
+install_alacritty(){
+    sudo pacman -S alacritty
+}
+
 # Install OneDrive CLI Client
 install_onedrive() {
+    echo "Ondrive install script unavailable please fix"
 }
+
 
 # Install Pop_OS! Shell
 install_pop_shell() {
+    echo "Pop shell install script unavailable please fix"
 }
 
 
 # Install Spicetify
 install_spicetify() {
     # Add install command for Spicetify
+    echo "Spicetify install script unavailable please fix"
 }
 
 # Install Spotify
 install_spotify() {
     # Add install command for Spotify
+    echo "Spotify install script unavailable please fix"
 }
 
 # Main script logic
@@ -68,8 +78,11 @@ else
             -h|--help)
                 help_message
                 ;;
-            -a|--all)
+            --all)
                 # Call functions for installing all programs
+                ;;
+            --alacritty)
+                install_alacritty
                 ;;
             -b|--bitwarden)
                 install_bitwarden

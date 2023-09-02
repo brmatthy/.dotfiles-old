@@ -5,7 +5,8 @@ Usage:
     By adding options one can acctually install programs.
 
 Options:
-    -a --all            Install all programs.
+    --all               Install all programs.
+    --alacritty         Install alacritty
     -b --bitwarden      Install bitwarden.
     -c --code           Install visual studio code.
     -d --discord        Install discord.
