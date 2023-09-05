@@ -53,7 +53,7 @@ install_onedrive() {
 
 # Install Pop_OS! Shell
 install_pop_shell() {
-    echo "Pop shell install script unavailable please fix"
+    yay -S gnome-shell-extension-pop-shell
 }
 
 
