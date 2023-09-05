@@ -12,5 +12,8 @@ ln -s $HOME/.dotfiles/.config/alacritty/ $HOME/.config/
 # make symlink to fonts dir
 ln -s $HOME/.dotfiles/.local/share/fonts/ $HOME/.local/share/
 
+# make symlink to rofi config dir
+ln -s $HOME/.dotfiles/.config/rofi/ $HOME/.config/
+
 # set the gnome keybinds
 ./util/gsettings.sh

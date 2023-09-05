@@ -86,3 +86,11 @@ Please install them manually.
 
 - [jetbrains-toolbox](https://www.jetbrains.com/toolbox-app/):
     *[guide](https://www.jetbrains.com/help/idea/installation-guide.html#61320ad4)*
+- [pop-launcher](https://github.com/pop-os/launcher)
+
+### Post install
+Due to gnome lacking some gsettings not all keybinds have been set.
+
+Please set:
+
+- <Super><Enter> : terminal

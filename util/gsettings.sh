@@ -3,6 +3,7 @@
 # set all the used keybindings
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
+gsettings set org.gnome.mutter overlay-key ''
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Shift><Super>1']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Shift><Super>2']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Shift><Super>3']"
