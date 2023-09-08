@@ -34,7 +34,7 @@
         "name": "Ufora",
         "keyword": "ufora",
         "cmd": "https://elosp.ugent.be/welcome",
-        "icon": null,
+        "icon": "~/.dotfiles/.local/share/ulauncher/media/ugent-icon.png",
         "is_default_search": false,
         "run_without_argument": true,
         "added": 1694163301.205149
