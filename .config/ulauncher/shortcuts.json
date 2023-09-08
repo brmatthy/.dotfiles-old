@@ -1,0 +1,42 @@
+{
+    "6570090b-aa6a-49b7-96b1-c18cf60a9356": {
+        "id": "6570090b-aa6a-49b7-96b1-c18cf60a9356",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1694162527.2798302
+    },
+    "846373d5-bcec-4adc-98a0-2f0af5f5e814": {
+        "id": "846373d5-bcec-4adc-98a0-2f0af5f5e814",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1694162527.2798629
+    },
+    "84271009-3320-46c2-8ca0-8785a84186af": {
+        "id": "84271009-3320-46c2-8ca0-8785a84186af",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1694162527.2798889
+    },
+    "d3ac5e6f-7158-486d-af98-ad6c8e0bcfc2": {
+        "id": "d3ac5e6f-7158-486d-af98-ad6c8e0bcfc2",
+        "name": "Ufora",
+        "keyword": "ufora",
+        "cmd": "https://elosp.ugent.be/welcome",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1694163301.205149
+    }
+}
