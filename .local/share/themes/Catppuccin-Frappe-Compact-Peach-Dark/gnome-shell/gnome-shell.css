@@ -28,7 +28,12 @@
   font-size: 15pt;
 }
 
-.lg-extension-name {
+.bt-menu-placeholder.popup-menu-item {
+  font-weight: 700;
+  font-size: 13pt;
+}
+
+.background-app-item .title, .lg-extension-name {
   font-weight: 700;
   font-size: 11pt;
 }
@@ -38,7 +43,7 @@
   font-size: 9pt;
 }
 
-.icon-label-button-container {
+.icon-label-button-container, .background-app-item .subtitle {
   font-weight: 400;
   font-size: 9pt;
 }
@@ -125,8 +130,6 @@
   border-radius: 30px;
   padding: 8px;
   background-color: #232634;
-  border: 1px solid black;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .app-folder-dialog .folder-name-container {
@@ -256,31 +259,31 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 /* Buttons */
-.quick-settings-system-item .icon-button, .hotplug-notification-item, .button {
+.quick-settings-system-item .icon-button, .quick-settings-system-item .background-app-item .close-button, .background-app-item .quick-settings-system-item .close-button, .hotplug-notification-item, .button {
   color: #FFFFFF;
   background-color: #303446;
   box-shadow: none !important;
 }
 
-.quick-settings-system-item .icon-button:focus, .hotplug-notification-item:focus, .button:focus {
+.quick-settings-system-item .icon-button:focus, .quick-settings-system-item .background-app-item .close-button:focus, .background-app-item .quick-settings-system-item .close-button:focus, .hotplug-notification-item:focus, .button:focus {
   color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.08);
   box-shadow: none !important;
 }
 
-.quick-settings-system-item .icon-button:hover, .hotplug-notification-item:hover, .button:hover {
+.quick-settings-system-item .icon-button:hover, .quick-settings-system-item .background-app-item .close-button:hover, .background-app-item .quick-settings-system-item .close-button:hover, .hotplug-notification-item:hover, .button:hover {
   color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.12);
   box-shadow: none !important;
 }
 
-.quick-settings-system-item .icon-button:active, .hotplug-notification-item:active, .button:active {
+.quick-settings-system-item .icon-button:active, .quick-settings-system-item .background-app-item .close-button:active, .background-app-item .quick-settings-system-item .close-button:active, .hotplug-notification-item:active, .button:active {
   color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: none !important;
 }
 
-.quick-settings-system-item .icon-button:insensitive, .hotplug-notification-item:insensitive, .button:insensitive {
+.quick-settings-system-item .icon-button:insensitive, .quick-settings-system-item .background-app-item .close-button:insensitive, .background-app-item .quick-settings-system-item .close-button:insensitive, .hotplug-notification-item:insensitive, .button:insensitive {
   color: rgba(255, 255, 255, 0.35);
   background-color: #303446;
   box-shadow: none !important;
@@ -780,8 +783,8 @@ StWidget.focused .app-well-app-running-dot {
 .candidate-popup-content, .modal-dialog {
   background-color: #303446;
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
 }
 
 .modal-dialog-linked-button:last-child {
@@ -1314,12 +1317,12 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   padding: 4px 8px;
   min-height: 24px;
   border-radius: 9999px;
-  caret-color: rgba(0, 0, 0, 0.87);
+  caret-color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.04);
   border-radius: 0;
   border: none;
-  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.15);
-  color: rgba(0, 0, 0, 0.87);
+  box-shadow: inset 0 -1px rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
 }
 
 .login-dialog StEntry:focus,
@@ -1327,19 +1330,19 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   border: none;
   background-color: rgba(255, 255, 255, 0.04);
   box-shadow: inset 0 -2px #FF8A65;
-  color: rgba(0, 0, 0, 0.87);
+  color: #FFFFFF;
 }
 
 .login-dialog StEntry:insensitive,
 .unlock-dialog StEntry:insensitive {
   border: none;
   background-color: rgba(255, 255, 255, 0.04);
-  color: rgba(0, 0, 0, 0.35);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .login-dialog StEntry StLabel.hint-text,
 .unlock-dialog StEntry StLabel.hint-text {
-  color: rgba(0, 0, 0, 0.38);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .login-dialog .modal-dialog-button-box,
@@ -1593,7 +1596,7 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   border-radius: 12px;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.75);
+  border: none;
 }
 
 #LookingGlassDialog > #Toolbar {
@@ -2366,12 +2369,12 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   box-shadow: inset 0 0 0 1000px #444752;
 }
 
-#panel .panel-button:hover.clock-display {
+#panel .panel-button.clock-display:hover {
   box-shadow: none;
   color: rgba(255, 255, 255, 0.7);
 }
 
-#panel .panel-button:hover.clock-display .clock {
+#panel .panel-button.clock-display:hover .clock {
   color: #FFFFFF;
   box-shadow: inset 0 0 0 1000px #444752;
 }
@@ -2382,12 +2385,12 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   box-shadow: inset 0 0 0 1000px #5a5c67;
 }
 
-#panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display {
+#panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
   box-shadow: none;
   color: rgba(255, 255, 255, 0.7);
 }
 
-#panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
+#panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
   box-shadow: inset 0 0 0 1000px #5a5c67;
   color: #FFFFFF;
 }
@@ -2415,7 +2418,7 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   -st-icon-style: symbolic;
 }
 
-#panel .panel-button#panelActivities {
+#panel #panelActivities.panel-button {
   -natural-hpadding: 12px;
 }
 
@@ -2434,12 +2437,12 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.12);
 }
 
-#panel:overview .panel-button:hover.clock-display, #panel.unlock-screen .panel-button:hover.clock-display, #panel.login-screen .panel-button:hover.clock-display, #panel.lock-screen .panel-button:hover.clock-display {
+#panel:overview .panel-button.clock-display:hover, #panel.unlock-screen .panel-button.clock-display:hover, #panel.login-screen .panel-button.clock-display:hover, #panel.lock-screen .panel-button.clock-display:hover {
   box-shadow: none;
   color: #FFFFFF;
 }
 
-#panel:overview .panel-button:hover.clock-display .clock, #panel.unlock-screen .panel-button:hover.clock-display .clock, #panel.login-screen .panel-button:hover.clock-display .clock, #panel.lock-screen .panel-button:hover.clock-display .clock {
+#panel:overview .panel-button.clock-display:hover .clock, #panel.unlock-screen .panel-button.clock-display:hover .clock, #panel.login-screen .panel-button.clock-display:hover .clock, #panel.lock-screen .panel-button.clock-display:hover .clock {
   color: #FFFFFF;
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.12);
 }
@@ -2450,12 +2453,12 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
 }
 
-#panel:overview .panel-button:active.clock-display, #panel:overview .panel-button:overview.clock-display, #panel:overview .panel-button:focus.clock-display, #panel:overview .panel-button:checked.clock-display, #panel.unlock-screen .panel-button:active.clock-display, #panel.unlock-screen .panel-button:overview.clock-display, #panel.unlock-screen .panel-button:focus.clock-display, #panel.unlock-screen .panel-button:checked.clock-display, #panel.login-screen .panel-button:active.clock-display, #panel.login-screen .panel-button:overview.clock-display, #panel.login-screen .panel-button:focus.clock-display, #panel.login-screen .panel-button:checked.clock-display, #panel.lock-screen .panel-button:active.clock-display, #panel.lock-screen .panel-button:overview.clock-display, #panel.lock-screen .panel-button:focus.clock-display, #panel.lock-screen .panel-button:checked.clock-display {
+#panel:overview .panel-button.clock-display:active, #panel:overview .panel-button.clock-display:overview, #panel:overview .panel-button.clock-display:focus, #panel:overview .panel-button.clock-display:checked, #panel.unlock-screen .panel-button.clock-display:active, #panel.unlock-screen .panel-button.clock-display:overview, #panel.unlock-screen .panel-button.clock-display:focus, #panel.unlock-screen .panel-button.clock-display:checked, #panel.login-screen .panel-button.clock-display:active, #panel.login-screen .panel-button.clock-display:overview, #panel.login-screen .panel-button.clock-display:focus, #panel.login-screen .panel-button.clock-display:checked, #panel.lock-screen .panel-button.clock-display:active, #panel.lock-screen .panel-button.clock-display:overview, #panel.lock-screen .panel-button.clock-display:focus, #panel.lock-screen .panel-button.clock-display:checked {
   box-shadow: none;
   color: #FFFFFF;
 }
 
-#panel:overview .panel-button:active.clock-display .clock, #panel:overview .panel-button:overview.clock-display .clock, #panel:overview .panel-button:focus.clock-display .clock, #panel:overview .panel-button:checked.clock-display .clock, #panel.unlock-screen .panel-button:active.clock-display .clock, #panel.unlock-screen .panel-button:overview.clock-display .clock, #panel.unlock-screen .panel-button:focus.clock-display .clock, #panel.unlock-screen .panel-button:checked.clock-display .clock, #panel.login-screen .panel-button:active.clock-display .clock, #panel.login-screen .panel-button:overview.clock-display .clock, #panel.login-screen .panel-button:focus.clock-display .clock, #panel.login-screen .panel-button:checked.clock-display .clock, #panel.lock-screen .panel-button:active.clock-display .clock, #panel.lock-screen .panel-button:overview.clock-display .clock, #panel.lock-screen .panel-button:focus.clock-display .clock, #panel.lock-screen .panel-button:checked.clock-display .clock {
+#panel:overview .panel-button.clock-display:active .clock, #panel:overview .panel-button.clock-display:overview .clock, #panel:overview .panel-button.clock-display:focus .clock, #panel:overview .panel-button.clock-display:checked .clock, #panel.unlock-screen .panel-button.clock-display:active .clock, #panel.unlock-screen .panel-button.clock-display:overview .clock, #panel.unlock-screen .panel-button.clock-display:focus .clock, #panel.unlock-screen .panel-button.clock-display:checked .clock, #panel.login-screen .panel-button.clock-display:active .clock, #panel.login-screen .panel-button.clock-display:overview .clock, #panel.login-screen .panel-button.clock-display:focus .clock, #panel.login-screen .panel-button.clock-display:checked .clock, #panel.lock-screen .panel-button.clock-display:active .clock, #panel.lock-screen .panel-button.clock-display:overview .clock, #panel.lock-screen .panel-button.clock-display:focus .clock, #panel.lock-screen .panel-button.clock-display:checked .clock {
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
 }
@@ -2506,8 +2509,7 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   border-radius: 10px;
   margin: 0;
   font-weight: normal;
-  border: 1px solid rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  border: none;
 }
 
 .popup-menu .popup-menu-item {
@@ -2530,7 +2532,7 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
   border-radius: 6px 6px 0 0 !important;
 }
 
-.popup-menu .popup-menu-item:checked:focus, .popup-menu .popup-menu-item:checked:hover, .popup-menu .popup-menu-item:checked.selected {
+.popup-menu .popup-menu-item:checked:focus, .popup-menu .popup-menu-item:checked:hover, .popup-menu .popup-menu-item.selected:checked {
   color: #FFFFFF !important;
   background-color: alpha(currentColor, 0.08) !important;
 }
@@ -3091,7 +3093,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 0px 15px 15px 0px;
 }
 
-.page-navigation-arrow > StIcon {
+.page-navigation-arrow {
   margin: 6px;
   padding: 18px;
   width: 24px;
@@ -3100,17 +3102,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.page-navigation-arrow:insensitive > StIcon {
+.page-navigation-arrow:insensitive {
   background-color: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.5);
 }
 
-.page-navigation-arrow:hover > StIcon {
+.page-navigation-arrow:hover {
   background-color: rgba(255, 255, 255, 0.12);
   color: #FFFFFF;
 }
 
-.page-navigation-arrow:active > StIcon {
+.page-navigation-arrow:active {
   background-color: rgba(255, 255, 255, 0.3);
   color: #FFFFFF;
 }
@@ -3280,11 +3282,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin-top: 4px !important;
 }
 
-.quick-settings .icon-button, .quick-settings .button {
+.quick-settings .icon-button, .quick-settings .background-app-item .close-button, .background-app-item .quick-settings .close-button, .quick-settings .button {
   padding: 7px;
 }
 
-.quick-settings .icon-button > StIcon, .quick-settings .button > StIcon {
+.quick-settings .icon-button > StIcon, .quick-settings .background-app-item .close-button > StIcon, .background-app-item .quick-settings .close-button > StIcon, .quick-settings .button > StIcon {
   icon-size: 16px;
 }
 
@@ -3293,12 +3295,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing-columns: 8px;
 }
 
-.quick-toggle {
+.quick-toggle, .quick-menu-toggle {
   border-radius: 6px;
   min-width: 12em;
   max-width: 12em;
-  min-height: 40px;
+  min-height: 44px;
   border: none;
+}
+
+.quick-toggle {
   background-color: rgba(255, 255, 255, 0.08) !important;
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */
@@ -3347,29 +3352,76 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-right: 10px;
 }
 
-.quick-toggle .quick-toggle-label {
+.quick-toggle .quick-toggle-title {
   font-weight: bold;
 }
 
-.quick-toggle .quick-toggle-icon, .quick-toggle .quick-toggle-arrow {
+.quick-toggle StBoxLayout > .quick-toggle-subtitle {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.quick-toggle .quick-toggle-icon {
   icon-size: 16px;
 }
 
-.quick-menu-toggle:ltr > StBoxLayout {
-  padding-right: 0;
+.quick-menu-toggle .quick-toggle {
+  min-width: auto;
+  max-width: auto;
 }
 
-.quick-menu-toggle:rtl > StBoxLayout {
-  padding-left: 0;
+.quick-menu-toggle .quick-toggle:ltr {
+  border-radius: 6px 0 0 6px;
+}
+
+.quick-menu-toggle .quick-toggle:ltr > StBoxLayout {
+  padding-right: 6px;
+}
+
+.quick-menu-toggle .quick-toggle:rtl {
+  border-radius: 0 6px 6px 0;
+}
+
+.quick-menu-toggle .quick-toggle:rtr > StBoxLayout {
+  padding-left: 6px;
+}
+
+.quick-menu-toggle .quick-toggle:ltr:last-child {
+  border-radius: 6px;
+}
+
+.quick-menu-toggle .quick-toggle:rtl:last-child {
+  border-radius: 6px;
 }
 
 .quick-menu-toggle .quick-toggle-arrow {
   background-color: rgba(255, 255, 255, 0.08) !important;
   padding: 4px 7px;
+  border: none !important;
+  color: #FFFFFF;
+}
+
+.quick-menu-toggle .quick-toggle-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 .quick-menu-toggle .quick-toggle-arrow:active {
-  background-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.quick-menu-toggle .quick-toggle-arrow:checked {
+  background-color: #FF8A65 !important;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.quick-menu-toggle .quick-toggle-arrow:checked:hover {
+  background-color: #ff916e !important;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.quick-menu-toggle .quick-toggle-arrow:checked:active {
+  background-color: #ff9c7c !important;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .quick-menu-toggle .quick-toggle-arrow:ltr {
@@ -3378,10 +3430,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .quick-menu-toggle .quick-toggle-arrow:rtl {
   border-radius: 6px 0 0 6px;
-}
-
-.quick-slider {
-  padding: 0 4px;
 }
 
 .quick-slider > StBoxLayout {
@@ -3404,16 +3452,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   icon-size: 16px;
 }
 
-.quick-slider .icon-button {
+.quick-slider .icon-button, .quick-slider .background-app-item .close-button, .background-app-item .quick-slider .close-button {
   background-color: transparent;
   color: #FFFFFF !important;
+  padding: 4px;
 }
 
-.quick-slider .icon-button:hover {
+.quick-slider .icon-button:hover, .quick-slider .background-app-item .close-button:hover, .background-app-item .quick-slider .close-button:hover {
   background-color: rgba(255, 255, 255, 0.04);
 }
 
-.quick-slider .icon-button:active {
+.quick-slider .icon-button:active, .quick-slider .background-app-item .close-button:active, .background-app-item .quick-slider .close-button:active {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
@@ -3465,13 +3514,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 8px;
 }
 
-.quick-settings-system-item .icon-button {
+.quick-settings-system-item .icon-button, .quick-settings-system-item .background-app-item .close-button, .background-app-item .quick-settings-system-item .close-button {
   background-color: rgba(255, 255, 255, 0.08);
   color: #FFFFFF;
   border-radius: 6px;
 }
 
-.quick-settings-system-item .icon-button > StIcon {
+.quick-settings-system-item .icon-button > StIcon, .quick-settings-system-item .background-app-item .close-button > StIcon, .background-app-item .quick-settings-system-item .close-button > StIcon {
   -st-icon-style: symbolic;
   icon-size: 16px;
 }
@@ -3490,6 +3539,41 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .nm-network-item .wireless-secure-icon {
   icon-size: 8px;
+}
+
+.bt-device-item .popup-menu-icon {
+  -st-icon-style: symbolic;
+}
+
+.bt-menu-placeholder.popup-menu-item {
+  text-align: center;
+  padding: 2em 4em;
+}
+
+.device-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.background-apps-quick-toggle {
+  min-height: 40px;
+  background-color: transparent;
+}
+
+.background-apps-quick-toggle StIcon {
+  icon-size: 16px !important;
+}
+
+.background-app-item .popup-menu-icon {
+  icon-size: 32px !important;
+  -st-icon-style: regular !important;
+}
+
+.background-app-item .close-button {
+  padding: 4px;
+}
+
+.background-app-item.popup-inactive-menu-item {
+  color: #FFFFFF;
 }
 
 .search-entry {
@@ -4106,9 +4190,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
-#panel.light-panel .panel-button:hover.clock-display .clock,
-#panel.dark-panel .panel-button:hover.clock-display .clock,
-#panel.transparent-panel .panel-button:hover.clock-display .clock {
+#panel.light-panel .panel-button.clock-display:hover .clock,
+#panel.dark-panel .panel-button.clock-display:hover .clock,
+#panel.transparent-panel .panel-button.clock-display:hover .clock {
   background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
@@ -4123,41 +4207,41 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-#panel.light-panel .panel-button:active.clock-display .clock, #panel.light-panel .panel-button:checked.clock-display .clock, #panel.light-panel .panel-button:focus.clock-display .clock,
-#panel.dark-panel .panel-button:active.clock-display .clock,
-#panel.dark-panel .panel-button:checked.clock-display .clock,
-#panel.dark-panel .panel-button:focus.clock-display .clock,
-#panel.transparent-panel .panel-button:active.clock-display .clock,
-#panel.transparent-panel .panel-button:checked.clock-display .clock,
-#panel.transparent-panel .panel-button:focus.clock-display .clock {
+#panel.light-panel .panel-button.clock-display:active .clock, #panel.light-panel .panel-button.clock-display:checked .clock, #panel.light-panel .panel-button.clock-display:focus .clock,
+#panel.dark-panel .panel-button.clock-display:active .clock,
+#panel.dark-panel .panel-button.clock-display:checked .clock,
+#panel.dark-panel .panel-button.clock-display:focus .clock,
+#panel.transparent-panel .panel-button.clock-display:active .clock,
+#panel.transparent-panel .panel-button.clock-display:checked .clock,
+#panel.transparent-panel .panel-button.clock-display:focus .clock {
   background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-#panel.light-panel .panel-button:hover.clock-display, #panel.light-panel .panel-button:active.clock-display, #panel.light-panel .panel-button:overview.clock-display, #panel.light-panel .panel-button:focus.clock-display, #panel.light-panel .panel-button:checked.clock-display,
-#panel.dark-panel .panel-button:hover.clock-display,
-#panel.dark-panel .panel-button:active.clock-display,
-#panel.dark-panel .panel-button:overview.clock-display,
-#panel.dark-panel .panel-button:focus.clock-display,
-#panel.dark-panel .panel-button:checked.clock-display,
-#panel.transparent-panel .panel-button:hover.clock-display,
-#panel.transparent-panel .panel-button:active.clock-display,
-#panel.transparent-panel .panel-button:overview.clock-display,
-#panel.transparent-panel .panel-button:focus.clock-display,
-#panel.transparent-panel .panel-button:checked.clock-display {
+#panel.light-panel .panel-button.clock-display:hover, #panel.light-panel .panel-button.clock-display:active, #panel.light-panel .panel-button.clock-display:overview, #panel.light-panel .panel-button.clock-display:focus, #panel.light-panel .panel-button.clock-display:checked,
+#panel.dark-panel .panel-button.clock-display:hover,
+#panel.dark-panel .panel-button.clock-display:active,
+#panel.dark-panel .panel-button.clock-display:overview,
+#panel.dark-panel .panel-button.clock-display:focus,
+#panel.dark-panel .panel-button.clock-display:checked,
+#panel.transparent-panel .panel-button.clock-display:hover,
+#panel.transparent-panel .panel-button.clock-display:active,
+#panel.transparent-panel .panel-button.clock-display:overview,
+#panel.transparent-panel .panel-button.clock-display:focus,
+#panel.transparent-panel .panel-button.clock-display:checked {
   background-color: transparent !important;
 }
 
-#panel.light-panel .panel-button:hover.clock-display .clock, #panel.light-panel .panel-button:active.clock-display .clock, #panel.light-panel .panel-button:overview.clock-display .clock, #panel.light-panel .panel-button:focus.clock-display .clock, #panel.light-panel .panel-button:checked.clock-display .clock,
-#panel.dark-panel .panel-button:hover.clock-display .clock,
-#panel.dark-panel .panel-button:active.clock-display .clock,
-#panel.dark-panel .panel-button:overview.clock-display .clock,
-#panel.dark-panel .panel-button:focus.clock-display .clock,
-#panel.dark-panel .panel-button:checked.clock-display .clock,
-#panel.transparent-panel .panel-button:hover.clock-display .clock,
-#panel.transparent-panel .panel-button:active.clock-display .clock,
-#panel.transparent-panel .panel-button:overview.clock-display .clock,
-#panel.transparent-panel .panel-button:focus.clock-display .clock,
-#panel.transparent-panel .panel-button:checked.clock-display .clock {
+#panel.light-panel .panel-button.clock-display:hover .clock, #panel.light-panel .panel-button.clock-display:active .clock, #panel.light-panel .panel-button.clock-display:overview .clock, #panel.light-panel .panel-button.clock-display:focus .clock, #panel.light-panel .panel-button.clock-display:checked .clock,
+#panel.dark-panel .panel-button.clock-display:hover .clock,
+#panel.dark-panel .panel-button.clock-display:active .clock,
+#panel.dark-panel .panel-button.clock-display:overview .clock,
+#panel.dark-panel .panel-button.clock-display:focus .clock,
+#panel.dark-panel .panel-button.clock-display:checked .clock,
+#panel.transparent-panel .panel-button.clock-display:hover .clock,
+#panel.transparent-panel .panel-button.clock-display:active .clock,
+#panel.transparent-panel .panel-button.clock-display:overview .clock,
+#panel.transparent-panel .panel-button.clock-display:focus .clock,
+#panel.transparent-panel .panel-button.clock-display:checked .clock {
   color: #FFFFFF !important;
 }
 

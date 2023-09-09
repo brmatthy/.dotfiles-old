@@ -2,6 +2,7 @@
 
 # set all the used keybindings
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
+gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:'
 
 gsettings set org.gnome.mutter overlay-key ''
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Shift><Super>1']"

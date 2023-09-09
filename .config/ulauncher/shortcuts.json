@@ -38,5 +38,25 @@
         "is_default_search": false,
         "run_without_argument": true,
         "added": 1694163301.205149
+    },
+    "github": {
+        "id": "github",
+        "name": "GitHub",
+        "keyword": "github",
+        "cmd": "https://github.com/",
+        "icon": "~/.dotfiles/.local/share/ulauncher/media/github-icon.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1694163301.205149
+    },
+    "2180364d-f11a-41d9-aed1-c0e8b855876f": {
+        "id": "2180364d-f11a-41d9-aed1-c0e8b855876f",
+        "name": "Repo's",
+        "keyword": "gh",
+        "cmd": "https://github.com/brmatthy/%s",
+        "icon": "~/.dotfiles/.local/share/ulauncher/media/github-icon.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1694183779.0577178
     }
 }

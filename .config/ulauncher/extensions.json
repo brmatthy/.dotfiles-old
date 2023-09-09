@@ -1,1 +1,30 @@
-{}
+{
+    "com.github.jmakhack.ulauncher-neofetch-runner": {
+        "id": "com.github.jmakhack.ulauncher-neofetch-runner",
+        "url": "https://github.com/jmakhack/ulauncher-neofetch-runner",
+        "updated_at": "2023-09-08T16:49:15.974361",
+        "last_commit": "01934930ce69073ad6c7a08c4189d6ecdbf0e12e",
+        "last_commit_time": "2022-07-09T08:48:43"
+    },
+    "com.github.rapha149.ulauncher-deepl": {
+        "id": "com.github.rapha149.ulauncher-deepl",
+        "url": "https://github.com/Rapha149/ulauncher-deepl/",
+        "updated_at": "2023-09-08T16:55:48.296996",
+        "last_commit": "2dd4e692c5ed3b1c92258ae91354dcc370def909",
+        "last_commit_time": "2023-01-12T17:49:43"
+    },
+    "com.github.melianmiko.ulauncher-nmcli": {
+        "id": "com.github.melianmiko.ulauncher-nmcli",
+        "url": "https://github.com/melianmiko/ulauncher-nmcli",
+        "updated_at": "2023-09-08T16:56:12.630302",
+        "last_commit": "fe967c947748616df602c9d022fec6d68a6b2cf2",
+        "last_commit_time": "2022-05-01T12:20:38"
+    },
+    "com.github.iboyperson.ulauncher-system": {
+        "id": "com.github.iboyperson.ulauncher-system",
+        "url": "https://github.com/iboyperson/ulauncher-system",
+        "updated_at": "2023-09-08T17:19:48.356214",
+        "last_commit": "b2b9e8d9ec84f3eca4818811242920c418f47ffe",
+        "last_commit_time": "2023-08-29T19:27:57"
+    }
+}
