@@ -3,3 +3,5 @@
 [user]
 	email = 109791839+brmatthy@users.noreply.github.com
 	name = brmatthy
+[push]
+	autoSetupRemote = true
