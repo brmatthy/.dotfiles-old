@@ -1,6 +1,6 @@
 # .dotfiles
 
-This dotfiles repo contains all my personal dotfiles, scripts to install them, and scripts to install all my commonly used programs.
+This dotfiles repo contains all my personal dotfiles and scripts to install them.
 
 ## Description
 
@@ -32,34 +32,20 @@ First the dotfiles can be installed. This can be done by running the following c
 ./install_dotfiles.sh
 ```
 
-This will install all the dotfiles. Even of programs that are not installed yet. Under the hood symmlinks will be created on the expected dotfile locations to this repo. Thus deleting this repo will break all your configurations.
+This will install all the dotfiles. Even of programs that are not installed yet. 
 
-### 3. Install programs
+### Notes on installation
 
-Next one can install the programs that use the dotfiles.
-Depending on the OS you are using please use a different install script.
-The scripts are found in the `programs` folder.
+Under the hood symmlinks will be created on the expected dotfile locations to this repo. This repo contains these files at the expected path if this repo where the `$HOME` directory. Thus deleting this repo will break all your configurations.
 
-```sh
-# naming
-programs/install_osname.sh
-```
+If you have a configuration already presant the script will fail to create the symmlink since the file already exists. Please move your that file/dir to a backup one or move it into this repo.
 
-If no install script is available for your distribution, please create one. Before doing so please read the [programs readme](/programs/README.md). Currently the following distributions are supported
 
-#### Fedora
-Some programs will use [snap](https://snapcraft.io/docs/installing-snapd) for installation. Please ensure that it is installed prior.
-```sh
-./programs/install_fedora.sh
-```
 
 
 ## Programs
 
-### Auto install
-Here is a list of the programs that will be installed.
-Please use the `-h` option to see all the install options.
-This way you can install only some programs.
+Here is a list of programs that i usually install on a new os.
 
 - [gnome](https://www.gnome.org/)
 - [pop-os shell](https://github.com/pop-os/shell)
@@ -76,14 +62,6 @@ This way you can install only some programs.
 - [onedrive-cli-client](https://github.com/abraunegg/onedrive)
 - [ranger](https://github.com/ranger/ranger)
 - [inkscape](https://inkscape.org/)
-
-
-If you add a programm please add it to this list, to all the program install scripts and the program help message.
-
-### Manual install
-Some programs use less conventional methods of installing.
-Please install them manually.
-
 - [jetbrains-toolbox](https://www.jetbrains.com/toolbox-app/):
     *[guide](https://www.jetbrains.com/help/idea/installation-guide.html#61320ad4)*
 - [pop-launcher](https://github.com/pop-os/launcher)
@@ -93,4 +71,4 @@ Due to gnome lacking some gsettings not all keybinds have been set.
 
 Please set:
 
-- <Super><Enter> : terminal
+- `<Super><Enter> : terminal`
