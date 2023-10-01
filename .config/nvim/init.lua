@@ -43,6 +43,9 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- make :e be in working directory
+
+vim.cmd("set autochdir")
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -491,8 +494,19 @@ end
 --
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
+
+local lsp_flags = {
+    -- This is the default in Nvim 0.7+
+    debounce_text_changes = 150,
+}
+
 local servers = {
-  -- clangd = {},
+  clangd = {
+    filetypes = { "h", "c", "cpp", "cc", "objc", "objcpp"},
+    flags = lsp_flags,
+    cmd = {"clangd", "--background-index"},
+    single_file_support = true,
+  },
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},

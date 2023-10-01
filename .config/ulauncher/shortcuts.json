@@ -55,8 +55,8 @@
         "keyword": "gh",
         "cmd": "https://github.com/brmatthy/%s",
         "icon": "~/.dotfiles/.local/share/ulauncher/media/github-icon.png",
-        "is_default_search": false,
-        "run_without_argument": true,
+        "is_default_search": true,
+        "run_without_argument": false,
         "added": 1694183779.0577178
     }
 }
