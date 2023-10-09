@@ -28,6 +28,9 @@ ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 # make symlink to alacritty config dir
 ln -s $HOME/.dotfiles/.config/alacritty/ $HOME/.config/
 
+# make symlink to alacritty config dir
+ln -s $HOME/.dotfiles/.config/tmux/ $HOME/.config/
+
 # make symlink to spicetify config dir
 ln -s $HOME/.dotfiles/.config/spicetify/ $HOME/.config/
 

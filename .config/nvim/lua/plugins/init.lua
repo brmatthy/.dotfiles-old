@@ -61,13 +61,16 @@ require("lazy").setup({
 
   -- plugin for coq theorem prover
   'whonore/Coqtail',
+
+  -- Useful plugin to show you pending keybinds.
+  { 'folke/which-key.nvim', opts = {} },
   --------------------------------
   -- Plugins with configuration --
   --------------------------------
 
   -- Keep the cursor centered
   'arnamak/stay-centered.nvim',
- 
+
   -- catppuccin theme
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
@@ -137,6 +140,9 @@ require("lazy").setup({
     },
   },
 
+  -- Add tmux support
+  {'alexghergh/nvim-tmux-navigation', lazy=false,},
+
 })
 
 ----------------------------
@@ -164,3 +170,6 @@ require "plugins.configs.telescope"
 
 -- import lsp config
 require "plugins.configs.lspconfig"
+
+-- import tmux-navigation confgig
+require "plugins.configs.tmux-nav"
