@@ -1,0 +1,2 @@
+# prevent tmux plugins
+.config/tmux/plugins/
