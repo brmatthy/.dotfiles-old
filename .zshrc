@@ -25,3 +25,17 @@ source ~/clones/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# source aliases
+ALIASFILE=~/.aliases
+source $ALIASFILE
+function aa() {
+    if [[ -z $1 || -z $2 || $# -gt 2 ]]; then
+        echo "[ aa - Add Alias ]"
+        echo "usage: $0 alias 'command'"
+    else
+        echo "alias $1='$2'" >> $ALIASFILE
+        source $ALIASFILE
+        echo "alias $1 ADDED to $ALIASFILE"
+    fi
+}
