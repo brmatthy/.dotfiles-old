@@ -22,6 +22,9 @@ ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 # make symlink to .zshrc file
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+# make symlink to .zshrc file
+ln -s $HOME/.dotfiles/.aliases $HOME/.aliases
+
 # make symlink to .p10k.zsh file
 ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
