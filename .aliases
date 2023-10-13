@@ -1,1 +1,3 @@
 alias v='nvim'
+alias t='$HOME/.local/bin/tmuxp'
+alias hpc='ssh vsc45333@login.hpc.ugent.be'
