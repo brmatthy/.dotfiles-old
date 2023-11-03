@@ -5,3 +5,5 @@
 	name = brmatthy
 [push]
 	autoSetupRemote = true
+[pull]
+	rebase = false
