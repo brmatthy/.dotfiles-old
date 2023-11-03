@@ -7,7 +7,12 @@
 -- └───────────────────────────────────────────────────┘
 
 -- set relative line numbers
-vim.cmd("set rnu")
+vim.cmd("set nu rnu")
+
+-- set tab with to be 2 spaces
+--vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set shiftwidth=2")
 
 -- require the plugins
 require("plugins")

@@ -77,6 +77,15 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  pyright = {
+    python = {
+      analysis = {
+        autoSearchPaths = true,
+        diagnosticMode = "openFilesOnly",
+        useLibraryCodeForTypes = true
+      }
+    }
+  }
 }
 
 -- Setup neovim lua configuration

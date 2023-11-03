@@ -59,9 +59,6 @@ require("lazy").setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
-  -- plugin for coq theorem prover
-  'whonore/Coqtail',
-
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim', opts = {} },
   --------------------------------
@@ -143,6 +140,13 @@ require("lazy").setup({
   -- Add tmux support
   {'alexghergh/nvim-tmux-navigation', lazy=false,},
 
+  -- Add oil vim: a file navigator / creator as buffer
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  }
 })
 
 ----------------------------
@@ -171,5 +175,8 @@ require "plugins.configs.telescope"
 -- import lsp config
 require "plugins.configs.lspconfig"
 
--- import tmux-navigation confgig
+-- import tmux-navigation config
 require "plugins.configs.tmux-nav"
+
+-- import oil config
+require "plugins.configs.oil"
