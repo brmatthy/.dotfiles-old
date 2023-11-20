@@ -28,6 +28,9 @@ ln -s $HOME/.dotfiles/.aliases $HOME/.aliases
 # make symlink to .p10k.zsh file
 ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
+# make symlink to p10k config dir
+ln -s $HOME/.dotfiles/.config/powerlevel10k/ $HOME/.config/
+
 # make symlink to alacritty config dir
 ln -s $HOME/.dotfiles/.config/alacritty/ $HOME/.config/
 
