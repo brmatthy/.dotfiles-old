@@ -11,3 +11,4 @@ clip() {
 
     $@ | xclip -selection clipboard
 }
+alias atlas='ssh brent@192.168.129.32'
