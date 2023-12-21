@@ -70,24 +70,16 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
-  eslint = {},
+  -- eslint = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
     },
   },
-  pyright = {
-    python = {
-      analysis = {
-        autoSearchPaths = true,
-        diagnosticMode = "openFilesOnly",
-        useLibraryCodeForTypes = true
-      }
-    }
-  }
 }
-
+-- for openGl
+require'lspconfig'.glslls.setup{}
 -- Setup neovim lua configuration
 require('neodev').setup()
 

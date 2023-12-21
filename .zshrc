@@ -21,10 +21,10 @@ SAVEHIST=1000
 unsetopt autocd beep extendedglob
 bindkey -v
 # End of lines configured by zsh-newuser-install
-source ~/.dotfiles/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh
 
 # source aliases
 ALIASFILE=~/.aliases
@@ -39,3 +39,8 @@ function aa() {
         echo "alias $1 ADDED to $ALIASFILE"
     fi
 }
+
+# syntax highlighting
+source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh/catppuccin_frappe-zsh-syntax-highlighting.zsh
+
