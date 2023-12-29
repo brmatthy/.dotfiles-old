@@ -1,0 +1,17 @@
+-- Highlight, edit, and navigate code
+return {
+  'nvim-treesitter/nvim-treesitter',
+  dependencies = {
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    "nvim-tree/nvim-web-devicons"
+  },
+  build = ':TSUpdate',
+  opts = {
+    ensure_installed = { 'c', 'cpp', 'lua', 'python', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'query' },
+    auto_install = true,
+    highlight = { enable = true },
+    indent = { enable = true },
+  }
+}
+
+
