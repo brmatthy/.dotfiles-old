@@ -42,12 +42,3 @@ vim.opt.rtp:prepend(lazypath)
 -- To add a new plugin create a new file for the plugin in the 
 -- plugins folder
 require("lazy").setup("plugins")
-
--- start telescope if nvim starts without opening a buffer
-vim.api.nvim_create_autocmd("VimEnter", {
-  callback = function()
-    if vim.fn.argv(0) == "" then
-      require("telescope.builtin").find_files()
-    end
-  end,
-})
