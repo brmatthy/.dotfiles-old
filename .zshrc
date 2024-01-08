@@ -44,3 +44,6 @@ function aa() {
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.config/zsh/catppuccin_frappe-zsh-syntax-highlighting.zsh
 
+EDITOR=$(which nvim)
+
+[ -f "/home/brent/.ghcup/env" ] && source "/home/brent/.ghcup/env" # ghcup-env

@@ -3,6 +3,7 @@ local colors = {
   crust   = '#232634',
   mantle  = '#292c3c',
   base    = '#303446',
+  surface1= '#51576d',
 
   peach   = '#ef9f76',
   maroon  = '#ea999c',
@@ -15,39 +16,41 @@ local colors = {
   pink    = '#f4b8e4',
 
   text    = '#c6d0f5',
+
+  transparent = '#00000000',
 }
 
 
 local theme = {
   normal = {
-    a = {bg = colors.peach, fg = colors.crust, gui = 'bold'},
-    b = {bg = colors.base, fg = colors.maroon},
-    c = {bg = colors.crust, fg = colors.text}
+    a = {bg = colors.peach, fg = colors.mantle, gui = 'bold'},
+    b = {bg = colors.mantle, fg = colors.maroon},
+    c = {bg = colors.transparent, fg = colors.text}
   },
   insert = {
-    a = {bg = colors.green, fg = colors.crust, gui = 'bold'},
-    b = {bg = colors.base, fg = colors.teal},
-    c = {bg = colors.crust, fg = colors.text}
+    a = {bg = colors.green, fg = colors.mantle, gui = 'bold'},
+    b = {bg = colors.mantle, fg = colors.teal},
+    c = {bg = colors.transparent, fg = colors.text}
   },
   visual = {
-     a = {bg = colors.blue, fg = colors.crust, gui = 'bold'},
-    b = {bg = colors.base, fg = colors.sapphire},
-    c = {bg = colors.crust, fg = colors.text}
+     a = {bg = colors.blue, fg = colors.mantle, gui = 'bold'},
+    b = {bg = colors.mantle, fg = colors.sapphire},
+    c = {bg = colors.transparent, fg = colors.text}
   },
   replace = {
-     a = {bg = colors.mauve, fg = colors.crust, gui = 'bold'},
-    b = {bg = colors.base, fg = colors.pink},
-    c = {bg = colors.crust, fg = colors.text}
+     a = {bg = colors.mauve, fg = colors.mantle, gui = 'bold'},
+    b = {bg = colors.mantle, fg = colors.pink},
+    c = {bg = colors.transparent, fg = colors.text}
   },
   command = {
-    a = {bg = colors.red, fg = colors.crust, gui = 'bold'},
-    b = {bg = colors.base, fg = colors.maroon},
-    c = {bg = colors.crust, fg = colors.text}
+    a = {bg = colors.red, fg = colors.mantle, gui = 'bold'},
+    b = {bg = colors.mantle, fg = colors.maroon},
+    c = {bg = colors.transparent, fg = colors.text}
   },
   inactive = {
-    a = {bg = colors.text, fg = colors.crust, gui = 'bold'},
-    b = {bg = colors.base, fg = colors.text},
-    c = {bg = colors.crust, fg = colors.text}
+    a = {bg = colors.text, fg = colors.mantle, gui = 'bold'},
+    b = {bg = colors.mantle, fg = colors.text},
+    c = {bg = colors.transparent, fg = colors.text}
   }
 }
 
@@ -67,7 +70,7 @@ return {
       },
       ignore_focus = {},
       always_divide_middle = true,
-      globalstatus = false,
+      globalstatus = true,
       refresh = {
         statusline = 1000,
         tabline = 1000,
@@ -78,7 +81,39 @@ return {
       lualine_a = {'mode'},
       lualine_b = {'branch', 'diff', 'diagnostics'},
       lualine_c = {'filename'},
-      lualine_x = {'encoding'},
+      lualine_x = {
+        {
+          'buffers',
+          -- Specify names for special buffers
+          filetype_names = {
+            TelescopePrompt = 'Telescope',
+            lazy = 'Lazy',
+            alpha = 'Home',
+            oil = 'Oil'
+          },
+
+          -- Style the buffer indicator
+          buffers_color = {
+            active = {bg = colors.peach, fg = colors.mantle , gui = 'bold'},
+            inactive = {bg = colors.base , fg = colors.text},
+            alternate_file = {bg = colors.pink, fg = colors.text}
+          },
+
+          -- Set symbols for the buffer indicator
+          symbols = {
+            modified = " ●",
+            alternate_file = "",
+            directory = ""
+          },
+
+          mode = 0,
+          show_filename_only = true,
+          hide_filename_extension = true,
+          show_modified_status = true,
+
+
+        }
+      },
       lualine_y = {'progress'},
       lualine_z = {'location'}
     },

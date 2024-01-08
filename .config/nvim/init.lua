@@ -42,3 +42,12 @@ vim.opt.rtp:prepend(lazypath)
 -- To add a new plugin create a new file for the plugin in the 
 -- plugins folder
 require("lazy").setup("plugins")
+
+vim.g.mkdp_auto_start = 1
+
+vim.keymap.set('n', '<leader>w', ':w<CR>', { desc = 'Save buffer' })
+vim.keymap.set('n', '<leader>qq', ':wq<CR>', { desc = 'Save buffer and quit window' })
+vim.keymap.set('n', '<leader>qb', ':w | bd<CR>', { desc = 'Save and quit buffer' })
+vim.keymap.set('n', '<tab>', ':bnext<CR>')
+vim.keymap.set('n', '<S-tab>', ':bprev<CR>')
+
