@@ -14,6 +14,11 @@ return {
           require("telescope.themes").get_dropdown({}),
         },
       },
+      pickers = {
+        find_files = {
+          hidden = true
+        }
+      },
     })
     local builtin = require("telescope.builtin")
     vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
