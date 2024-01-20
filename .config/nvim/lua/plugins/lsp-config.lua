@@ -81,6 +81,7 @@ local servers = {
   hls = {},
   marksman = {},
   typos_lsp = {},
+  rnix = {},
 }
 
 

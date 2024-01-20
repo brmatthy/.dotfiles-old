@@ -47,3 +47,6 @@ source $HOME/.config/zsh/catppuccin_frappe-zsh-syntax-highlighting.zsh
 EDITOR=$(which nvim)
 
 [ -f "/home/brent/.ghcup/env" ] && source "/home/brent/.ghcup/env" # ghcup-env
+
+# Wayland Fix
+export QT_QPA_PLATFORM=wayland
