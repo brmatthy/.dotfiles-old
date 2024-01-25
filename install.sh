@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nix-env -iA \
+nix-env --option allowUnfree true -iA \
   nixpkgs.xorg.xorgserver \
   nixpkgs.xorg.xrandr \
   nixpkgs.lightdm \
