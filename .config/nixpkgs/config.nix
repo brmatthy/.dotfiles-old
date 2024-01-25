@@ -1,4 +1,4 @@
-{lib}:
+{lib, pkgs}:
 {
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages =
