@@ -1,4 +1,4 @@
 {
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = "electron-25.9.0";
+  allowUnfree = true;
+  permittedInsecurePackages = "electron-25.9.0";
 }
