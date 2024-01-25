@@ -3,8 +3,6 @@
 nix-env -iA \
   nixpkgs.xorg.xorgserver \
   nixpkgs.xorg.xrandr \
-  nixpkgs.lightdm \
-  nixpkgs.lightdm-gtk-greeter \
   nixpkgs.i3 \
   nixpkgs.polybar \
   nixpkgs.rofi \
