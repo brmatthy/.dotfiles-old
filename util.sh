@@ -34,16 +34,3 @@ link() {
 	link_exact "$HOME/.dotfiles/$1" "$HOME/$1"
 }
 
-
-# Checks if a package is installed
-# Usage: $(installed "pkg_name") -eq 1
-# @return 1 if the package is installed
-# @return 0 if the package is not installed
-installed() {
-	if [[ -z "$(pacman -Q $1 2> /dev/null)" ]]; then
-		echo 0
-	else
-		echo 1
-	fi	
-}
-
