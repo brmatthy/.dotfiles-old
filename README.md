@@ -22,8 +22,14 @@ sh <(curl -L https://nixos.org/nix/install) --daemon
 Now restart the shell.
 Add flakes to the nix config.
 ```sh
-mkdir -p ~/.config/nix/nix.conf
-echo "experimental-features = nix-command flakes" > ~/.config/nix/nix.conf
+mkdir -p ~/.config/nix
+echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
+```
+
+Allow for unfree software
+```sh
+mkdir -p ~/.config/nixpkgs
+echo "{ allowUnfree = true; }" >> ~/.config/nixpkgs/config.nix
 ```
 
 ### Setup system
@@ -35,12 +41,13 @@ clone this repo and enter it
 ```sh
 git clone git@github.com:brmatthy/.dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 ```
+Install all the dotfiles. This must happen prior to installing the packages
+since some nix settings must be set for electron and obsidian.
+```sh
+./dotfiles.sh
+```
 Now we can install all the packages
 ```sh
 ./install.sh
-```
-And install all the dotfiles
-```sh
-./dotfiles.sh
 ```
 
