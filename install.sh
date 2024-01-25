@@ -1,7 +1,6 @@
 #!/bin/bash
 
 nix-env -iA \
-  nixpkgs.xorg.xorgserver \
   nixpkgs.xorg.xrandr \
   nixpkgs.i3 \
   nixpkgs.polybar \
