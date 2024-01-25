@@ -1,14 +1,7 @@
 alias v='nvim'
-alias t='$HOME/.local/bin/tmuxp'
 alias hpc='ssh vsc45333@login.hpc.ugent.be'
 alias cmcd='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1'
-
-clip() {
-    if [ -z "$1" ]; then
-        echo "Usage: clip <command>"
-        return 1
-    fi
-
-    $@ | xclip -selection clipboard
-}
 alias atlas='ssh brent@192.168.129.32'
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias ls='exa --icons --color=always --group-directories-first'
