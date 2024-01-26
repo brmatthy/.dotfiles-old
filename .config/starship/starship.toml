@@ -13,7 +13,7 @@ error_symbol = "[](red)"
 vimcmd_symbol = "[](green)"
 
 [os]
-disabled = true
+disabled = false 
 style = 'bold red'
 
 [os.symbols]
@@ -28,7 +28,7 @@ format = "[$all_status$ahead_behind]($style) "
 modified = "*"
 
 [directory]
-style = "bold peach"
+style = "bold yellow"
 
 [palettes.catppuccin_frappe]
 rosewater = "#f2d5cf"
