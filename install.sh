@@ -2,7 +2,6 @@
 
 nix-env -iA \
   nixpkgs.xorg.xrandr \
-  nixpkgs.i3 \
   nixpkgs.polybar \
   nixpkgs.rofi \
   nixpkgs.git \
