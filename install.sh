@@ -6,8 +6,6 @@ nix-env -iA \
   nixpkgs.polybar \
   nixpkgs.rofi \
   nixpkgs.git \
-  nixpkgs.kitty \
-  nixpkgs.zsh \
   nixpkgs.starship \
   nixpkgs.neovim \
   nixpkgs.eza \

@@ -31,5 +31,14 @@ function aa() {
 # syntax highlighting
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.config/zsh/catppuccin_frappe-zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 EDITOR=$(which nvim)
+
+# Add nix to path
+export PATH="$PATH:$HOME/.nix-profile/bin"
+export PATH="$PATH:/nix/var/nix/profiles/default/bin"
+
+# Add starship prompt
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"

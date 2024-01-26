@@ -51,3 +51,22 @@ Now we can install all the packages
 ./install.sh
 ```
 
+### Setup base environment
+The nix package manager doesn't play nice with very low system settings such as
+the window manager, and display server. These will only work out of the box
+using nixos.
+
+Install the following packages to setup a base environment.
+```sh
+xorg lightdm lightdm-gtk-greeter i3 kitty zsh
+```
+
+Set kitty as the default terminal
+```sh
+sudo update-alternatives --config x-terminal-emulator
+```
+
+Set zsh as the default shell
+```sh
+sudo chsh -s $(which zsh)
+```
