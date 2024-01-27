@@ -16,7 +16,7 @@ link_exact() {
 	# Create the symlink
 	ln -s $1 $2
 
-	# Cehck if symlink is created
+	# Check if symlink is created
 	if [[ -e $2 ]]; then
 		echo "DONE"
 	else

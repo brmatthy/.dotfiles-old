@@ -1,24 +1,20 @@
 #!/bin/bash
 
-nix-env -iA \
-  nixpkgs.xorg.xrandr \
-  nixpkgs.polybar \
-  nixpkgs.rofi \
-  nixpkgs.git \
-  nixpkgs.starship \
-  nixpkgs.neovim \
-  nixpkgs.eza \
-  nixpkgs.lazygit \
-  nixpkgs.firefox \
-  nixpkgs.gnome.nautilus \
-  nixpkgs.gnome.gnome-disk-utility \
-  nixpkgs.gnome.gnome-calculator \
-  nixpkgs.obsidian \
-  nixpkgs.spotify \
-  nixpkgs.spicetify-cli \
-  nixpkgs.discord \
-  nixpkgs.polkit \
-  nixpkgs.polkit_gnome \
-  nixpkgs.pavucontrol \
-  nixpkgs.arandr \
-  nixpkgs.autorandr \
+source ~/.dotfiles/util.sh
+
+echo "┌─────────────────────────────────────────────────────────┐
+│░█▀█░▀█▀░█░█░░░░░█▀█░█▀▀░░░░░░░░░█▀▀░█▀█░█▀█░█▀▀░▀█▀░█▀▀░│
+│░█░█░░█░░▃▀▃░▀▀▀░█░█░▀▀█░░░░▀░░░░█░░░█░█░█░█░█▀▀░░█░░█░█░│
+│░▀░▀░▀▀▀░▀░▀░░░░░▀▀▀░▀▀▀░░░░▀░░░░▀▀▀░▀▀▀░▀░▀░▀░░░▀▀▀░▀▀▀░│
+│░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
+│░░░░░░░░░░░░░░░Brent░Matthys░on░27-01-2024░░░░░░░░░░░░░░░│
+└─────────────────────────────────────────────────────────┘
+"
+
+echo "Generating hardware-configuration..."
+sudo nixos-generate-config --show-hardware-config > "$HOME/.dotfiles/nixos/hardware-configuration.nix"
+
+echo "Backing up /etc/nixos to /etc/nixos.backup"
+sudo mv /etc/nixos /etc/nixos.backup
+
+sudo link_exact "$HOME/.dotfiles/nixos" "/etc/nixos"
