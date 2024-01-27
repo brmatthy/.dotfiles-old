@@ -1,7 +1,10 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
+# ┌─────────────────────────────────────────────────────────┐
+# │░█▀█░▀█▀░█░█░░░░░█▀█░█▀▀░░░░░░░░░█▀▀░█▀█░█▀█░█▀▀░▀█▀░█▀▀░│
+# │░█░█░░█░░▃▀▃░▀▀▀░█░█░▀▀█░░░░▀░░░░█░░░█░█░█░█░█▀▀░░█░░█░█░│
+# │░▀░▀░▀▀▀░▀░▀░░░░░▀▀▀░▀▀▀░░░░▀░░░░▀▀▀░▀▀▀░▀░▀░▀░░░▀▀▀░▀▀▀░│
+# │░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
+# │░░░░░░░░░░░░░░░Brent░Matthys░on░27-01-2024░░░░░░░░░░░░░░░│
+# └─────────────────────────────────────────────────────────┘
 { config, pkgs, ... }:
 
 let
@@ -12,8 +15,15 @@ let
 in 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
+
+      ./hardware/power.nix
+      ./hardware/time.nix
+      ./hardware/opengl.nix
+      ./hardware/printing.nix
+
+      ./wm/hyprland.nix
     ];
 
   # Bootloader.
@@ -89,24 +99,6 @@ in
   hardware = {
     opengl.enable = true;
     nvidia.modesetting.enable = true;
-  };
-
-  # services
-  services.timesyncd.enable = true;
-  services.tlp = { # power settings
-    enable = true;
-    settings = {
-      CPU_SCALING_GOVERNOR_ON_AC = "performance";
-      CPU_SCALING_GOVERNOR_ON_BAT = "schedutil";
-
-      CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
-      CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
-
-      CPU_MIN_PERF_ON_AC = 0;
-      CPU_MAX_PERF_ON_AC = 100;
-      CPU_MIN_PERF_ON_BAT = 0;
-      CPU_MAX_PERF_ON_BAT = 80;
-    };
   };
 
   # This value determines the NixOS release from which the default
