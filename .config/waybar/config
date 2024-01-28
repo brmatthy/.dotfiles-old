@@ -1,0 +1,78 @@
+{
+    "layer": "top",
+		"output": "HDMI-A-1",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/spotify", "network","pulseaudio", "custom/power"],
+
+    "clock": {
+				"interval": 1,
+        "format": "{:%a %d %B %Y %H:%M:%S}"
+    },
+
+		"hyprland/workspaces": {
+			"all-outputs": true,
+			"format": "{name} {windows}",
+			"window-rewrite-default": "",
+			"window-rewrite": {
+				"firefox": "󰈹",
+				"kitty": "",
+				"gnome-disks": "󱛟",
+				"Spotify": "",
+				"pavucontrol": "󰓃",
+				"thunar": "",
+				"discord": "󰙯",
+				"obsidian": "",
+				"xwaylandvideobridge": "",
+			},
+		},
+
+		"pulseaudio": {
+				"format": "{volume}% {icon}",
+				"format-bluetooth": "{volume}% {icon}",
+				"format-muted": "󰖁",
+				"format-icons": {
+						"headphone": "",
+						"hands-free": "",
+						"headset": "",
+						"phone": "",
+						"portable": "",
+						"car": "",
+						"default": ["󰕿", "󰖀", "󰕾"]
+				},
+				"scroll-step": 5,
+				"on-click": "pamixer -t",
+				"on-click-right": "pavucontrol",
+				"ignored-sinks": ["Easy Effects Sink"]
+		},
+
+		"network": {
+				"interface": "wlp6s0",
+				"format": "󰤭",
+				"format-wifi": " {bandwidthDownBytes} {icon}",
+				"format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+				"format-ethernet": "{bandwidthDownBytes}󰈀",
+				"format-disconnected": "󰤭", //An empty format will hide the module.
+				"tooltip-format": "{ifname} via {gwaddr} 󰊗",
+				"tooltip-format-wifi": "{essid} ({signalStrength}%) {icon}",
+				"tooltip-format-ethernet": "{ifname} ",
+				"tooltip-format-disconnected": "Disconnected",
+				"max-length": 50,
+				"on-click": "kitty nmtui",
+				"interval": 1,
+		},
+
+		"custom/power": {
+			"format": "⏻",
+			"on-click": "~/.config/rofi/powermenu/powermenu.sh"
+		},
+
+		"custom/spotify": {
+				"exec": "/usr/bin/python3 ~/.config/waybar/mediaplayer.py --player spotify",
+				"format": "{}  ",
+				"return-type": "json",
+				"on-click": "playerctl play-pause",
+				"on-scroll-up": "playerctl next",
+				"on-scroll-down": "playerctl previous"
+		},
+} 

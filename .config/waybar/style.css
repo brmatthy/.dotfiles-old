@@ -1,0 +1,94 @@
+@import "frappe.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: RobotoMono Nerd Font, JetBrainsMono Nerd Font;
+}
+
+/* base layout for all the blocks */
+#custom-spotify, #custom-power, #network, #pulseaudio, #workspaces button, #clock {
+  all: initial; /* Remove GTK theme values (waybar #1351) */
+  min-width: 0; /* Fix weird spacing in materia (waybar #450) */
+  box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
+  padding: 3px 18px;
+  margin: 3px 3px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: transparent;
+  font-family: RobotoMono Nerd Font;
+}
+
+window#waybar {
+  background-color: @base;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.5;
+}
+
+#workspaces {
+  background-color: transparent;
+}
+
+#workspaces button {
+  background-color: @base;
+  color: @text;
+}
+
+#workspaces button.active {
+  color: @base;
+  background-color: @peach;
+}
+
+#workspaces button:hover {
+ box-shadow: inherit;
+ text-shadow: inherit;
+ color: @base;
+ background-color: @text;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+}
+
+#workspaces button.visible {
+    border-bottom: 3px solid @peach;
+}
+
+#clock {
+    color: @text;
+}
+
+#pulseaudio {
+    background-color: @sky;
+    color: @base;
+}
+
+#pulseaudio.muted {
+    background-color: @red;
+    color: @base;
+}
+
+#network.ethernet, #network.wifi {
+    background-color: @teal;
+    color: @base;
+}
+
+#network, #network.disabled, #network.disconnected{
+    background-color: @red;
+    color: @base;
+}
+
+#custom-power {
+  background-color: @sapphire;
+  color: @base;
+}
+
+#custom-spotify {
+  background-color: @green;
+  color: @base;
+}
