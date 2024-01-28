@@ -67,8 +67,9 @@ in
     # system
     rofi-wayland
     wayland
-    waydroid
+    waybar
     wlr-randr
+    wl-clipboard
 
     # shell
     zsh
