@@ -60,15 +60,41 @@ in
 
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
-    neovim
-    zsh
+    # base
     wget
     git
-    cups-filters
+
+    # system
+    rofi-wayland
     wayland
     waydroid
+    wlr-randr
+
+    # shell
+    zsh
+    starship
+    eza
+    neofetch
+
+    # apps
+    neovim
+    lazygit
     firefox
-    rofi-wayland
+    kitty
+    gnome.nautilus
+    gnome.gnome-disk-utility
+    gnome.gnome-calculator
+    spotify
+    spicetify-cli
+    discord
+    pavucontrol
+
+    # security
+    polkit
+    polkit_gnome
+
+    # misc
+    cups-filters
   ];
 
   # Enable other programs
