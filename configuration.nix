@@ -88,6 +88,16 @@ in
     spicetify-cli
     discord
     pavucontrol
+    bitwarden
+    lxappearance
+
+    # languages
+    rustup
+    gcc
+    cmake
+    python3
+    rnix-lsp
+
 
     # security
     polkit
