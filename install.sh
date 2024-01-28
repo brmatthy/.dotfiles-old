@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 source ~/.dotfiles/util.sh
 
@@ -16,5 +16,6 @@ sudo nixos-generate-config --show-hardware-config > "$HOME/.dotfiles/nixos/hardw
 
 echo "Backing up /etc/nixos to /etc/nixos.backup"
 sudo mv /etc/nixos /etc/nixos.backup
+sudo rm /etc/nixos/configuration.nix
 
-sudo link_exact "$HOME/.dotfiles/nixos" "/etc/nixos"
+sudo link_exact "$HOME/.dotfiles/configuration.nix" "/etc/configuration.nix"

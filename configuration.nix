@@ -64,8 +64,7 @@ in
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
     neovim
     zsh
@@ -76,65 +75,12 @@ in
     waydroid
     firefox
     rofi-wayland
-
   ];
 
-  # I use zsh btw
-  environment.shells = with pkgs; [ zsh ];
-  users.defaultUserShell = pkgs.zsh;
-  programs.zsh.enable = true;
-
-  fonts.fontDir.enable = true;
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal
-      pkgs.xdg-desktop-portal-gtk
-    ];
-  };
-
-  services.timesyncd.enable = true;
-  services.tlp = {
-    enable = true;
-    settings = {
-      CPU_SCALING_GOVERNOR_ON_AC = "performance";
-      CPU_SCALING_GOVERNOR_ON_BAT = "schedutil";
-
-      CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
-      CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
-
-      CPU_MIN_PERF_ON_AC = 0;
-      CPU_MAX_PERF_ON_AC = 100;
-      CPU_MIN_PERF_ON_BAT = 0;
-      CPU_MAX_PERF_ON_BAT = 80;
-    };
-  };
-
-  # Enable printing
-  services.printing.enable = true;
-  services.avahi.enable = true;
-  services.avahi.nssmdns = true;
-  services.avahi.openFirewall = true;
-
-  # OpenGL
-  hardware.opengl.enable = true;
-  hardware.nvidia.modesetting.enable = true;
-
-  # Security
-  security = {
-    pam.services.swaylock = {
-      text = ''
-        auth include login
-      '';
-    };
-#    pam.services.gtklock = {};
-    pam.services.login.enableGnomeKeyring = true;
-  };
-
-  services.gnome.gnome-keyring.enable = true;
-
+  # Enable other programs
   programs = {
+    zsh.enable = true;
+    dconf.enable = true;
     hyprland = {
       enable = true;
       xwayland = {
@@ -144,48 +90,91 @@ in
     };
   };
 
-  # Pipewire
-  security.rtkit.enable = true;
-  services.pipewire = {
+  # set zsh as default shell
+  environment.shells = with pkgs; [ zsh ];
+  users.defaultUserShell = pkgs.zsh;
+
+  xdg.portal = {
     enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal
+      pkgs.xdg-desktop-portal-gtk
+    ];
+  };
+  hardware = {
+    opengl.enable = true;
+    nvidia.modesetting.enable = true;
+  };
+
+  # Security
+  security = {
+    pam.services = {
+      swaylock = {
+        text = ''
+          auth include login
+        '';
+      };
+#     gtklock = {};
+      login.enableGnomeKeyring = true;
+    };
+    rtkit.enable = true;
   };
 
 
-  # Configure xwayland
-  services.xserver = {
-    enable = true;
-    layout = "be";
-    xkbVariant = "wang";
-    xkbOptions = "caps:escape";
-    displayManager.gdm = {
+  # services
+  services = {
+    gnome.gnome-keyring.enable = true;
+    timesyncd.enable = true;
+    printing.enable = true;
+    dbus = {
       enable = true;
-      wayland = true;
+      packages = [ pkgs.dconf ];
+    };
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+      jack.enable = true;
+    };
+    xserver = {
+      enable = true;
+      xkbOptions = "caps:escape";
+      displayManager.gdm = {
+        enable = true;
+        wayland = true;
+      };
+    };
+    tlp = { # power
+      enable = true;
+      settings = {
+        CPU_SCALING_GOVERNOR_ON_AC = "performance";
+        CPU_SCALING_GOVERNOR_ON_BAT = "schedutil";
+
+        CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+        CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
+
+        CPU_MIN_PERF_ON_AC = 0;
+        CPU_MAX_PERF_ON_AC = 100;
+        CPU_MIN_PERF_ON_BAT = 0;
+        CPU_MAX_PERF_ON_BAT = 80;
+      };
+    };
+    avahi = { # printing
+      enable = true;
+      nssmdns = true;
+      openFirewall = true;
     };
   };
 
-  services.dbus = {
-    enable = true;
-    packages = [ pkgs.dconf ];
+  # set fonts
+  fonts = {
+    fontDir.enable = true;
+    fonts =  with pkgs; [
+      # Fonts
+      (nerdfonts.override { fonts = [ "RobotoMono" "JetBrainsMono" ]; })
+    ];
   };
-
-  programs.dconf = {
-    enable = true;
-  };
-
-  services.gnome = {
-    gnome-keyring.enable = true;
-  };
-
-  # Fonts are nice to have
-  fonts.fonts = with pkgs; [
-    # Fonts
-    (nerdfonts.override { fonts = [ "RobotoMono" "JetBrainsMono" ]; })
-  ];
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
@@ -194,5 +183,4 @@ in
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
-
 }
