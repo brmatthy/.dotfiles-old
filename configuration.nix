@@ -44,12 +44,6 @@ in
     LC_TIME = locale;
   };
 
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "be";
-    xkbVariant = "wang";
-  };
-
   # Configure console keymap
   console.keyMap = "be-latin1";
 
@@ -139,6 +133,8 @@ in
     };
     xserver = {
       enable = true;
+      layout = "be";
+      xkbVariant = "wang";
       xkbOptions = "caps:escape";
       displayManager.gdm = {
         enable = true;
