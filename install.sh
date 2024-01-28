@@ -18,4 +18,5 @@ echo "Backing up /etc/nixos to /etc/nixos.backup"
 sudo mv /etc/nixos /etc/nixos.backup
 sudo rm /etc/nixos/configuration.nix
 
+sudo mkdir -p /etc/nixos
 sudo link_exact "$HOME/.dotfiles/configuration.nix" "/etc/configuration.nix"

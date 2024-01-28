@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 link_exact() {
 	echo -n "Creating symlink for \"$1\" : "
