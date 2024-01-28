@@ -20,6 +20,7 @@ link ".aliases"
 link ".local/share/fonts"
 link ".local/share/icons"
 link ".local/share/themes"
+link ".gtkrc-2.0"
 
 link ".config/kitty"
 link ".config/neofetch"

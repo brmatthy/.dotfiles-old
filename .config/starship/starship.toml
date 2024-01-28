@@ -14,10 +14,10 @@ vimcmd_symbol = "[](green)"
 
 [os]
 disabled = false 
-style = 'bold red'
 
 [os.symbols]
 Debian = " "
+NixOS = "[](sky) "
 
 [git_branch]
 symbol = " "
