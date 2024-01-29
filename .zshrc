@@ -38,3 +38,6 @@ EDITOR=$(which nvim)
 # Add starship prompt
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+
+# Add rust to the path
+export PATH=$PATH:$HOME/.cargo/bin
