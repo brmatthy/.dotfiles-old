@@ -60,4 +60,4 @@ gsettings set org.gnome.shell.keybindings switch-to-application-7 []
 gsettings set org.gnome.shell.keybindings switch-to-application-8 []
 gsettings set org.gnome.shell.keybindings switch-to-application-9 []
 
-dconf load /org/gnome/shell/extensions/pop-shell/ < $HOME/.dotfiles/util/pop_settings.conf
+dconf load /org/gnome/shell/extensions/pop-shell/ < $HOME/.dotfiles/gnome/pop_settings.conf
