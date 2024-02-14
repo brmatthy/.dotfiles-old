@@ -1,0 +1,12 @@
+
+# set kitty fonts
+font_family      RobotoMono Nerd Font
+bold_font        RobotoMono Nerd Font
+italic_font      RobotoMono Nerd Font
+bold_italic_font RobotoMono Nerd Font
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Latte
+include current-theme.conf
+# END_KITTY_THEME

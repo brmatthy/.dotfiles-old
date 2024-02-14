@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : Brent Matthys (brmatthy)
+ * Github : @brmatthy
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #303446;
+    background-alt: #414559;
+    foreground:     #c6d0f5;
+    selected:       #ef9f76;
+    active:         #a6d189;
+    urgent:         #e78284;
+}
