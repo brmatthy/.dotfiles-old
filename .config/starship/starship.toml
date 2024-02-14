@@ -18,6 +18,7 @@ disabled = false
 [os.symbols]
 Debian = " "
 NixOS = "[](sky) "
+Fedora = "[](blue) "
 
 [git_branch]
 symbol = " "
@@ -29,6 +30,9 @@ modified = "*"
 
 [directory]
 style = "bold yellow"
+
+[rust]
+symbol = " "
 
 [palettes.catppuccin_frappe]
 rosewater = "#f2d5cf"

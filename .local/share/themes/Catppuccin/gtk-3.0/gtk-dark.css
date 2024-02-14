@@ -12,17 +12,17 @@
 
 @keyframes ripple-on-headerbar {
   from {
-    background-image: radial-gradient(circle, #FF8A65 0%, transparent 0%);
+    background-image: radial-gradient(circle, #f1b08d 0%, transparent 0%);
   }
   to {
-    background-image: radial-gradient(circle, #FF8A65 100%, transparent 0%);
+    background-image: radial-gradient(circle, #f1b08d 100%, transparent 0%);
   }
 }
 
 * {
   background-clip: padding-box;
   -GtkToolButton-icon-spacing: 0;
-  -GtkTextView-error-underline-color: #F44336;
+  -GtkTextView-error-underline-color: #ea999c;
   -GtkScrolledWindow-scrollbar-spacing: 0;
   -GtkToolItemGroup-expander-size: 11;
   -GtkWidget-text-handle-width: 24;
@@ -34,7 +34,7 @@
   outline-color: transparent;
   outline-offset: -4px;
   -gtk-outline-radius: 6px;
-  -gtk-secondary-caret-color: #FF8A65;
+  -gtk-secondary-caret-color: #f1b08d;
 }
 
 *:focus {
@@ -47,15 +47,15 @@
   background-color: alpha(currentColor, 0.1);
 }
 
-.nemo-window .view selection, .nemo-window .view:selected, .nautilus-window notebook .view:not(treeview) selection, .nautilus-window notebook .view:not(treeview):selected, .nautilus-window flowboxchild:selected .icon-item-background, flowbox flowboxchild:selected {
-  color: #FF8A65;
-  background-color: rgba(255, 138, 101, 0.2);
+.nemo-window .view selection, .nemo-window .view:selected, .nautilus-window notebook .view:not(treeview) selection, .nautilus-window notebook .view:not(treeview):selected, .nautilus-window flowboxchild:selected .icon-item-background, label selection, flowbox flowboxchild:selected {
+  color: #f1b08d;
+  background-color: rgba(241, 176, 141, 0.2);
 }
 
 .nemo-window .nemo-window-pane widget.entry:selected, window.background.csd evview.view.content-view:selected, window.background.csd evview.view.content-view:selected:backdrop, .nautilus-window.background.csd notebook widget.view:selected, spinbutton.vertical selection, spinbutton:not(.vertical) selection,
-entry selection, label selection, textview text selection:focus, textview text selection, widget.view:selected, .view:selected {
+entry selection, textview text selection:focus, textview text selection, widget.view:selected, .view:selected {
   color: rgba(0, 0, 0, 0.87);
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 .linked:not(.vertical) > button, .linked:not(.vertical) > spinbutton.vertical, .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry {
@@ -135,7 +135,7 @@ entry selection, label selection, textview text selection:focus, textview text s
 }
 
 .gtkstyle-fallback:selected {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -165,7 +165,7 @@ textview text {
 }
 
 textview border {
-  background-color: #232634;
+  background-color: #292C3C;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -219,12 +219,6 @@ XfdesktopIconView.view treeview.view .content-view .rubberband,
 .content-view treeview.view rubberband,
 .content-view treeview.view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view treeview.view .rubberband,
-.content-view treeview.view rubberband,
-.content-view treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view .rubberband,
-treeview.view .content-view rubberband,
-treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view .content-view .rubberband,
 .content-view treeview.view flowbox rubberband,
 .content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
@@ -237,12 +231,6 @@ XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
 flowbox treeview.view .content-view rubberband,
 flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
 .content-view flowbox treeview.view flowbox rubberband,
 .content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
@@ -260,44 +248,18 @@ XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
 .content-view treeview.view flowbox rubberband,
 .content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-.content-view treeview.view flowbox rubberband,
-.content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-treeview.view flowbox .content-view rubberband,
-treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
 treeview.view .content-view flowbox rubberband,
 treeview.view .content-view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view treeview.view .content-view flowbox .rubberband,
-.content-view treeview.view flowbox rubberband,
-.content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-treeview.view flowbox .content-view rubberband,
-treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
 treeview.view .content-view flowbox treeview.view rubberband,
 treeview.view .content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view treeview.view .content-view flowbox treeview.view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
 .content-view flowbox treeview.view flowbox rubberband,
 .content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
 flowbox treeview.view flowbox .content-view rubberband,
 flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-treeview.view flowbox .content-view .rubberband,
-.content-view treeview.view flowbox .rubberband,
 flowbox treeview.view rubberband,
 flowbox treeview.view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox treeview.view .rubberband,
@@ -310,12 +272,6 @@ XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
 flowbox .content-view treeview.view rubberband,
 flowbox .content-view treeview.view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox .content-view treeview.view .rubberband,
-.content-view flowbox treeview.view rubberband,
-.content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
-flowbox treeview.view .content-view rubberband,
-flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
 flowbox .content-view treeview.view flowbox rubberband,
 flowbox .content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox .content-view treeview.view flowbox .rubberband,
@@ -325,35 +281,9 @@ XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
 flowbox treeview.view flowbox .content-view rubberband,
 flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-.content-view flowbox treeview.view rubberband,
-.content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
-flowbox treeview.view .content-view rubberband,
-flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
-.content-view flowbox treeview.view flowbox rubberband,
-.content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
-flowbox treeview.view flowbox .content-view rubberband,
-flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-flowbox treeview.view .content-view .rubberband,
-.content-view flowbox treeview.view .rubberband,
 flowbox rubberband,
 flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox .rubberband,
-flowbox .content-view rubberband,
-flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox .content-view .rubberband,
-.content-view flowbox rubberband,
-.content-view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox .rubberband,
 flowbox .content-view treeview.view rubberband,
 flowbox .content-view treeview.view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox .content-view treeview.view .rubberband,
@@ -366,32 +296,18 @@ XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
 treeview.view .content-view flowbox rubberband,
 treeview.view .content-view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view treeview.view .content-view flowbox .rubberband,
-.content-view treeview.view flowbox rubberband,
-.content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
 treeview.view flowbox .content-view rubberband,
 treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
 .content-view flowbox treeview.view rubberband,
 .content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
-flowbox treeview.view .content-view rubberband,
-flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
 .content-view flowbox treeview.view flowbox rubberband,
 .content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
 flowbox treeview.view flowbox .content-view rubberband,
 flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-flowbox .content-view .rubberband,
-.content-view flowbox .rubberband,
 flowbox treeview.view rubberband,
 flowbox treeview.view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox treeview.view .rubberband,
@@ -404,12 +320,6 @@ XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
 flowbox .content-view treeview.view rubberband,
 flowbox .content-view treeview.view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox .content-view treeview.view .rubberband,
-.content-view flowbox treeview.view rubberband,
-.content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
-flowbox treeview.view .content-view rubberband,
-flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
 flowbox .content-view treeview.view flowbox rubberband,
 flowbox .content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox .content-view treeview.view flowbox .rubberband,
@@ -419,26 +329,6 @@ XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
 flowbox treeview.view flowbox .content-view rubberband,
 flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-.content-view flowbox treeview.view rubberband,
-.content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
-flowbox treeview.view .content-view rubberband,
-flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
-.content-view flowbox treeview.view flowbox rubberband,
-.content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
-flowbox treeview.view flowbox .content-view rubberband,
-flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-flowbox treeview.view .content-view .rubberband,
-.content-view flowbox treeview.view .rubberband,
 treeview.view flowbox rubberband,
 treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view treeview.view flowbox .rubberband,
@@ -448,140 +338,17 @@ XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
 .content-view treeview.view flowbox rubberband,
 .content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-.content-view treeview.view flowbox rubberband,
-.content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-treeview.view flowbox .content-view rubberband,
-treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
 treeview.view .content-view flowbox rubberband,
 treeview.view .content-view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view treeview.view .content-view flowbox .rubberband,
-.content-view treeview.view flowbox rubberband,
-.content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-treeview.view flowbox .content-view rubberband,
-treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
-treeview.view .content-view flowbox treeview.view rubberband,
-treeview.view .content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view .content-view flowbox treeview.view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
 .content-view flowbox treeview.view flowbox rubberband,
 .content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
 XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
 flowbox treeview.view flowbox .content-view rubberband,
 flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-treeview.view flowbox .content-view .rubberband,
-.content-view treeview.view flowbox .rubberband,
-treeview.view flowbox rubberband,
-treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox .rubberband,
-treeview.view flowbox .content-view rubberband,
-treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
-.content-view treeview.view flowbox rubberband,
-.content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-.content-view treeview.view flowbox rubberband,
-.content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-treeview.view flowbox .content-view rubberband,
-treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
-treeview.view .content-view flowbox rubberband,
-treeview.view .content-view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view .content-view flowbox .rubberband,
-.content-view treeview.view flowbox rubberband,
-.content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox .rubberband,
-treeview.view flowbox .content-view rubberband,
-treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox .content-view .rubberband,
-treeview.view .content-view flowbox treeview.view rubberband,
-treeview.view .content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view .content-view flowbox treeview.view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
-.content-view flowbox treeview.view flowbox rubberband,
-.content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
-flowbox treeview.view flowbox .content-view rubberband,
-flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-treeview.view flowbox .content-view .rubberband,
-.content-view treeview.view flowbox .rubberband,
-flowbox treeview.view rubberband,
-flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .rubberband,
-flowbox treeview.view .content-view rubberband,
-flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
-.content-view flowbox treeview.view rubberband,
-.content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
-flowbox .content-view treeview.view rubberband,
-flowbox .content-view treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox .content-view treeview.view .rubberband,
-.content-view flowbox treeview.view rubberband,
-.content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
-flowbox treeview.view .content-view rubberband,
-flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
-flowbox .content-view treeview.view flowbox rubberband,
-flowbox .content-view treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox .content-view treeview.view flowbox .rubberband,
-.content-view flowbox treeview.view flowbox rubberband,
-.content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
-flowbox treeview.view flowbox .content-view rubberband,
-flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-.content-view flowbox treeview.view rubberband,
-.content-view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view .rubberband,
-flowbox treeview.view .content-view rubberband,
-flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view .content-view .rubberband,
-.content-view treeview.view flowbox treeview.view rubberband,
-.content-view treeview.view flowbox treeview.view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view treeview.view flowbox treeview.view .rubberband,
-treeview.view flowbox treeview.view .content-view rubberband,
-treeview.view flowbox treeview.view .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view treeview.view flowbox treeview.view .content-view .rubberband,
-.content-view flowbox treeview.view flowbox rubberband,
-.content-view flowbox treeview.view flowbox XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view .content-view flowbox treeview.view flowbox .rubberband,
-flowbox treeview.view flowbox .content-view rubberband,
-flowbox treeview.view flowbox .content-view XfdesktopIconView.view .rubberband,
-XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband,
-flowbox treeview.view .content-view .rubberband,
-.content-view flowbox treeview.view .rubberband {
-  border: 1px solid #FF8A65;
-  background-color: rgba(255, 138, 101, 0.3);
+XfdesktopIconView.view flowbox treeview.view flowbox .content-view .rubberband {
+  border: 1px solid #f1b08d;
+  background-color: rgba(241, 176, 141, 0.3);
 }
 
 flowbox flowboxchild {
@@ -684,7 +451,7 @@ entry {
 spinbutton.vertical:focus, spinbutton:focus:not(.vertical),
 entry:focus {
   background-color: rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 0 0 2px #FF8A65;
+  box-shadow: inset 0 0 0 2px #f1b08d;
 }
 
 spinbutton.vertical:drop(active), spinbutton:drop(active):not(.vertical),
@@ -773,7 +540,7 @@ entry.error {
 spinbutton.error.vertical:focus, spinbutton.error:focus:not(.vertical),
 entry.error:focus {
   background-color: rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 0 0 2px #F44336;
+  box-shadow: inset 0 0 0 2px #ea999c;
 }
 
 spinbutton.error.vertical:disabled, spinbutton.error:disabled:not(.vertical),
@@ -794,7 +561,7 @@ entry.warning {
 spinbutton.warning.vertical:focus, spinbutton.warning:focus:not(.vertical),
 entry.warning:focus {
   background-color: rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 0 0 2px #FBC02D;
+  box-shadow: inset 0 0 0 2px #ebd6ab;
 }
 
 spinbutton.warning.vertical:disabled, spinbutton.warning:disabled:not(.vertical),
@@ -807,7 +574,7 @@ entry.warning:disabled {
 spinbutton.vertical progress, spinbutton:not(.vertical) progress,
 entry progress {
   margin: 2px -8px;
-  border-bottom: 2px solid #FF8A65;
+  border-bottom: 2px solid #f1b08d;
   background-color: transparent;
 }
 
@@ -860,10 +627,10 @@ treeview entry.flat, treeview entry.flat:focus, treeview entry, treeview entry:f
  ***********/
 @keyframes needs-attention {
   from {
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.001, to(#FF8A65), to(transparent));
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.001, to(#f1b08d), to(transparent));
   }
   to {
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#FF8A65), to(transparent));
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#f1b08d), to(transparent));
   }
 }
 
@@ -896,7 +663,7 @@ actionbar > revealer > box .linked > button:not(.suggested-action):not(.destruct
 }
 
 actionbar > revealer > box .linked > button:focus:not(.suggested-action):not(.destructive-action), button:focus {
-  box-shadow: 0 0 0 2px rgba(255, 138, 101, 0.35);
+  box-shadow: 0 0 0 2px rgba(241, 176, 141, 0.35);
 }
 
 actionbar > revealer > box .linked > button:hover:not(.suggested-action):not(.destructive-action), button:hover {
@@ -918,7 +685,7 @@ actionbar > revealer > box .linked > button:disabled:not(.suggested-action):not(
 }
 
 actionbar > revealer > box .linked > button:checked:not(.suggested-action):not(.destructive-action), button:checked {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -932,7 +699,7 @@ actionbar > revealer > box .linked > button:checked:disabled:not(.suggested-acti
   color: rgba(255, 255, 255, 0.5);
 }
 
-.raven .expander-button, window.background > box.vertical > toolbar.primary-toolbar > toolitem > box.horizontal:not(.linked) > button.toggle,
+.raven-notifications-group list > row button.flat, .raven .expander-button, .budgie-popover button.flat.switcher, window.background > box.vertical > toolbar.primary-toolbar > toolitem > box.horizontal:not(.linked) > button.toggle,
 window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked > button:not(.toggle):not(.raised):not(.flat), window.csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > .linked > button,
 window.csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > box.horizontal > button,
 window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > .linked > button,
@@ -940,7 +707,7 @@ window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem >
   border-radius: 9999px;
 }
 
-.raven .expander-button label, window.background > box.vertical > toolbar.primary-toolbar > toolitem > box.horizontal:not(.linked) > button.toggle label,
+.raven-notifications-group list > row button.flat label, .raven .expander-button label, .budgie-popover button.flat.switcher label, window.background > box.vertical > toolbar.primary-toolbar > toolitem > box.horizontal:not(.linked) > button.toggle label,
 window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked > button:not(.toggle):not(.raised):not(.flat) label, window.csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > .linked > button label,
 window.csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > box.horizontal > button label,
 window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > .linked > button label,
@@ -967,9 +734,9 @@ button:drop(active) {
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.08);
 }
 
-.budgie-session-dialog .linked.horizontal > button,
-.budgie-polkit-dialog .linked.horizontal > button,
-.budgie-run-dialog .linked.horizontal > button, .drop-shadow button, .budgie-panel button, .budgie-popover row button, .budgie-settings-window buttonbox.inline-toolbar button, #mate-menu button, #MatePanelPopupWindow button, popover.messagepopover .popover-action-area button, tabbox > tab button, placessidebar.sidebar row button.sidebar-button, calendar.button, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular, treeview.view header button button.circular, row.activatable button.circular, scrollbar button, notebook > header > tabs > arrow, spinbutton.vertical button, spinbutton:not(.vertical) button, modelbutton.flat,
+.budgie-session-dialog buttonbox.linked > button,
+.budgie-polkit-dialog buttonbox.linked > button,
+.budgie-run-dialog buttonbox.linked > button, .budgie-panel button, .budgie-popover row button, .budgie-settings-window buttonbox.inline-toolbar button, #mate-menu button, #MatePanelPopupWindow button, popover.messagepopover .popover-action-area button, tabbox > tab button, placessidebar.sidebar row button.sidebar-button, calendar.button, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular, treeview.view header button button.circular, row.activatable button.circular, scrollbar button, notebook > header > tabs > arrow, spinbutton.vertical button, spinbutton:not(.vertical) button, modelbutton.flat,
 .menuitem.button.flat, .nemo-window .toolbar button, #buttonbox_frame button, .xfce4-panel.background button, .raven stackswitcher.linked > button, .budgie-popover.budgie-menu scrolledwindow.sidebar.categories button.flat.radio.category-button, .lock-dialog button, .mate-panel-menu-bar button, window.background.csd.geary-main-window stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button,
 window#GearyMainWindow.background.csd stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button, layouttabbar button, filechooser #pathbarbox > stack > box > button, messagedialog .dialog-action-box button, messagedialog .dialog-action-box .linked:not(.vertical) > button, .app-notification button, actionbar > revealer > box button:not(.suggested-action):not(.destructive-action), popover.background.menu button,
 popover.background button.model, .nemo-window .primary-toolbar button:not(.text-button), headerbar button:not(.suggested-action):not(.destructive-action), toolbar button, combobox > .linked:not(.vertical) > button:not(:only-child), button.flat {
@@ -984,9 +751,9 @@ popover.background button.model, .nemo-window .primary-toolbar button:not(.text-
   color: rgba(255, 255, 255, 0.7);
 }
 
-.budgie-session-dialog .linked.horizontal > button:focus,
-.budgie-polkit-dialog .linked.horizontal > button:focus,
-.budgie-run-dialog .linked.horizontal > button:focus, .drop-shadow button:focus, .budgie-panel button:focus, .budgie-popover row button:focus, .budgie-settings-window buttonbox.inline-toolbar button:focus, #mate-menu button:focus, #MatePanelPopupWindow button:focus, popover.messagepopover .popover-action-area button:focus, tabbox > tab button:focus, placessidebar.sidebar row button.sidebar-button:focus, calendar.button:focus, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular:focus, treeview.view header button button.circular:focus, row.activatable button.circular:focus, scrollbar button:focus, notebook > header > tabs > arrow:focus, spinbutton.vertical button:focus, spinbutton:not(.vertical) button:focus, modelbutton.flat:focus,
+.budgie-session-dialog buttonbox.linked > button:focus,
+.budgie-polkit-dialog buttonbox.linked > button:focus,
+.budgie-run-dialog buttonbox.linked > button:focus, .budgie-panel button:focus, .budgie-popover row button:focus, .budgie-settings-window buttonbox.inline-toolbar button:focus, #mate-menu button:focus, #MatePanelPopupWindow button:focus, popover.messagepopover .popover-action-area button:focus, tabbox > tab button:focus, placessidebar.sidebar row button.sidebar-button:focus, calendar.button:focus, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular:focus, treeview.view header button button.circular:focus, row.activatable button.circular:focus, scrollbar button:focus, notebook > header > tabs > arrow:focus, spinbutton.vertical button:focus, spinbutton:not(.vertical) button:focus, modelbutton.flat:focus,
 .menuitem.button.flat:focus, .nemo-window .toolbar button:focus, #buttonbox_frame button:focus, .xfce4-panel.background button:focus, .raven stackswitcher.linked > button:focus, .budgie-popover.budgie-menu scrolledwindow.sidebar.categories button.flat.radio.category-button:focus, .lock-dialog button:focus, .mate-panel-menu-bar button:focus, window.background.csd.geary-main-window stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button:focus,
 window#GearyMainWindow.background.csd stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button:focus, layouttabbar button:focus, filechooser #pathbarbox > stack > box > button:focus, messagedialog .dialog-action-box button:focus, messagedialog .dialog-action-box .linked:not(.vertical) > button:focus, .app-notification button:focus, actionbar > revealer > box button:focus:not(.suggested-action):not(.destructive-action), popover.background.menu button:focus,
 popover.background button.model:focus, .nemo-window .primary-toolbar button:focus:not(.text-button), headerbar button:focus:not(.suggested-action):not(.destructive-action), toolbar button:focus, combobox > .linked:not(.vertical) > button:focus:not(:only-child), button.flat:focus {
@@ -994,9 +761,9 @@ popover.background button.model:focus, .nemo-window .primary-toolbar button:focu
   color: #FFFFFF;
 }
 
-.budgie-session-dialog .linked.horizontal > button:hover,
-.budgie-polkit-dialog .linked.horizontal > button:hover,
-.budgie-run-dialog .linked.horizontal > button:hover, .drop-shadow button:hover, .budgie-panel button:hover, .budgie-popover row button:hover, .budgie-settings-window buttonbox.inline-toolbar button:hover, #mate-menu button:hover, #MatePanelPopupWindow button:hover, popover.messagepopover .popover-action-area button:hover, tabbox > tab button:hover, placessidebar.sidebar row button.sidebar-button:hover, calendar.button:hover, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular:hover, treeview.view header button button.circular:hover, row.activatable button.circular:hover, scrollbar button:hover, notebook > header > tabs > arrow:hover, spinbutton.vertical button:hover, spinbutton:not(.vertical) button:hover, modelbutton.flat:hover,
+.budgie-session-dialog buttonbox.linked > button:hover,
+.budgie-polkit-dialog buttonbox.linked > button:hover,
+.budgie-run-dialog buttonbox.linked > button:hover, .budgie-panel button:hover, .budgie-popover row button:hover, .budgie-settings-window buttonbox.inline-toolbar button:hover, #mate-menu button:hover, #MatePanelPopupWindow button:hover, popover.messagepopover .popover-action-area button:hover, tabbox > tab button:hover, placessidebar.sidebar row button.sidebar-button:hover, calendar.button:hover, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular:hover, treeview.view header button button.circular:hover, row.activatable button.circular:hover, scrollbar button:hover, notebook > header > tabs > arrow:hover, spinbutton.vertical button:hover, spinbutton:not(.vertical) button:hover, modelbutton.flat:hover,
 .menuitem.button.flat:hover, .nemo-window .toolbar button:hover, #buttonbox_frame button:hover, .xfce4-panel.background button:hover, .raven stackswitcher.linked > button:hover, .budgie-popover.budgie-menu scrolledwindow.sidebar.categories button.flat.radio.category-button:hover, .lock-dialog button:hover, .mate-panel-menu-bar button:hover, window.background.csd.geary-main-window stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button:hover,
 window#GearyMainWindow.background.csd stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button:hover, layouttabbar button:hover, filechooser #pathbarbox > stack > box > button:hover, messagedialog .dialog-action-box button:hover, messagedialog .dialog-action-box .linked:not(.vertical) > button:hover, .app-notification button:hover, actionbar > revealer > box button:hover:not(.suggested-action):not(.destructive-action), popover.background.menu button:hover,
 popover.background button.model:hover, .nemo-window .primary-toolbar button:hover:not(.text-button), headerbar button:hover:not(.suggested-action):not(.destructive-action), toolbar button:hover, combobox > .linked:not(.vertical) > button:hover:not(:only-child), button.flat:hover {
@@ -1004,9 +771,9 @@ popover.background button.model:hover, .nemo-window .primary-toolbar button:hove
   color: #FFFFFF;
 }
 
-.budgie-session-dialog .linked.horizontal > button:active,
-.budgie-polkit-dialog .linked.horizontal > button:active,
-.budgie-run-dialog .linked.horizontal > button:active, .drop-shadow button:active, .budgie-panel button:active, .budgie-popover row button:active, .budgie-settings-window buttonbox.inline-toolbar button:active, #mate-menu button:active, #MatePanelPopupWindow button:active, popover.messagepopover .popover-action-area button:active, tabbox > tab button:active, placessidebar.sidebar row button.sidebar-button:active, calendar.button:active, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular:active, treeview.view header button button.circular:active, row.activatable button.circular:active, scrollbar button:active, notebook > header > tabs > arrow:active, spinbutton.vertical button:active, spinbutton:not(.vertical) button:active, modelbutton.flat:active,
+.budgie-session-dialog buttonbox.linked > button:active,
+.budgie-polkit-dialog buttonbox.linked > button:active,
+.budgie-run-dialog buttonbox.linked > button:active, .budgie-panel button:active, .budgie-popover row button:active, .budgie-settings-window buttonbox.inline-toolbar button:active, #mate-menu button:active, #MatePanelPopupWindow button:active, popover.messagepopover .popover-action-area button:active, tabbox > tab button:active, placessidebar.sidebar row button.sidebar-button:active, calendar.button:active, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular:active, treeview.view header button button.circular:active, row.activatable button.circular:active, scrollbar button:active, notebook > header > tabs > arrow:active, spinbutton.vertical button:active, spinbutton:not(.vertical) button:active, modelbutton.flat:active,
 .menuitem.button.flat:active, .nemo-window .toolbar button:active, #buttonbox_frame button:active, .xfce4-panel.background button:active, .raven stackswitcher.linked > button:active, .budgie-popover.budgie-menu scrolledwindow.sidebar.categories button.flat.radio.category-button:active, .lock-dialog button:active, .mate-panel-menu-bar button:active, window.background.csd.geary-main-window stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button:active,
 window#GearyMainWindow.background.csd stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button:active, layouttabbar button:active, filechooser #pathbarbox > stack > box > button:active, messagedialog .dialog-action-box button:active, messagedialog .dialog-action-box .linked:not(.vertical) > button:active, .app-notification button:active, actionbar > revealer > box button:active:not(.suggested-action):not(.destructive-action), popover.background.menu button:active,
 popover.background button.model:active, .nemo-window .primary-toolbar button:active:not(.text-button), headerbar button:active:not(.suggested-action):not(.destructive-action), toolbar button:active, combobox > .linked:not(.vertical) > button:active:not(:only-child), button.flat:active {
@@ -1018,9 +785,9 @@ popover.background button.model:active, .nemo-window .primary-toolbar button:act
   color: #FFFFFF;
 }
 
-.budgie-session-dialog .linked.horizontal > button:disabled,
-.budgie-polkit-dialog .linked.horizontal > button:disabled,
-.budgie-run-dialog .linked.horizontal > button:disabled, .drop-shadow button:disabled, .budgie-panel button:disabled, .budgie-popover row button:disabled, .budgie-settings-window buttonbox.inline-toolbar button:disabled, #mate-menu button:disabled, #MatePanelPopupWindow button:disabled, popover.messagepopover .popover-action-area button:disabled, tabbox > tab button:disabled, placessidebar.sidebar row button.sidebar-button:disabled, calendar.button:disabled, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular:disabled, treeview.view header button button.circular:disabled, row.activatable button.circular:disabled, scrollbar button:disabled, notebook > header > tabs > arrow:disabled, spinbutton.vertical button:disabled, spinbutton:not(.vertical) button:disabled, modelbutton.flat:disabled,
+.budgie-session-dialog buttonbox.linked > button:disabled,
+.budgie-polkit-dialog buttonbox.linked > button:disabled,
+.budgie-run-dialog buttonbox.linked > button:disabled, .budgie-panel button:disabled, .budgie-popover row button:disabled, .budgie-settings-window buttonbox.inline-toolbar button:disabled, #mate-menu button:disabled, #MatePanelPopupWindow button:disabled, popover.messagepopover .popover-action-area button:disabled, tabbox > tab button:disabled, placessidebar.sidebar row button.sidebar-button:disabled, calendar.button:disabled, .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable button.circular:disabled, treeview.view header button button.circular:disabled, row.activatable button.circular:disabled, scrollbar button:disabled, notebook > header > tabs > arrow:disabled, spinbutton.vertical button:disabled, spinbutton:not(.vertical) button:disabled, modelbutton.flat:disabled,
 .menuitem.button.flat:disabled, .nemo-window .toolbar button:disabled, #buttonbox_frame button:disabled, .xfce4-panel.background button:disabled, .raven stackswitcher.linked > button:disabled, .budgie-popover.budgie-menu scrolledwindow.sidebar.categories button.flat.radio.category-button:disabled, .lock-dialog button:disabled, .mate-panel-menu-bar button:disabled, window.background.csd.geary-main-window stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button:disabled,
 window#GearyMainWindow.background.csd stack#conversation_viewer .geary-expanded > .geary-composer-embed headerbar button:disabled, layouttabbar button:disabled, filechooser #pathbarbox > stack > box > button:disabled, messagedialog .dialog-action-box button:disabled, messagedialog .dialog-action-box .linked:not(.vertical) > button:disabled, .app-notification button:disabled, actionbar > revealer > box button:disabled:not(.suggested-action):not(.destructive-action), popover.background.menu button:disabled,
 popover.background button.model:disabled, .nemo-window .primary-toolbar button:disabled:not(.text-button), headerbar button:disabled:not(.suggested-action):not(.destructive-action), toolbar button:disabled, combobox > .linked:not(.vertical) > button:disabled:not(:only-child), button.flat:disabled {
@@ -1119,7 +886,7 @@ button.osd.image-button > image, button.osd.circular > image {
 }
 
 button.suggested-action {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
   box-shadow: none;
 }
@@ -1131,24 +898,24 @@ button.suggested-action:disabled {
 }
 
 button.suggested-action:hover {
-  box-shadow: inset 0 0 0 9999px transparent, 0 2px 2.4px -1px rgba(255, 138, 101, 0.2), 0 4px 3px 0 rgba(255, 138, 101, 0.14), 0 1px 6px 0 rgba(255, 138, 101, 0.12);
+  box-shadow: inset 0 0 0 9999px transparent, 0 2px 2.4px -1px rgba(241, 176, 141, 0.2), 0 4px 3px 0 rgba(241, 176, 141, 0.14), 0 1px 6px 0 rgba(241, 176, 141, 0.12);
 }
 
 button.suggested-action:checked {
-  background-color: rgba(192, 104, 76, 0.961);
+  background-color: rgba(181, 132, 106, 0.961);
 }
 
 button.suggested-action:checked:hover {
-  box-shadow: inset 0 0 0 9999px transparent, 0 3px 3px -3px rgba(255, 138, 101, 0.3), 0 2px 3px -1px rgba(255, 138, 101, 0.24), 0 2px 5px 0 rgba(255, 138, 101, 0.12);
+  box-shadow: inset 0 0 0 9999px transparent, 0 3px 3px -3px rgba(241, 176, 141, 0.3), 0 2px 3px -1px rgba(241, 176, 141, 0.24), 0 2px 5px 0 rgba(241, 176, 141, 0.12);
 }
 
 button.suggested-action:focus {
-  box-shadow: 0 0 0 2px rgba(255, 138, 101, 0.35);
+  box-shadow: 0 0 0 2px rgba(241, 176, 141, 0.35);
 }
 
 button.suggested-action.flat {
   background-color: transparent;
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 button.suggested-action.flat:disabled {
@@ -1158,12 +925,12 @@ button.suggested-action.flat:disabled {
 }
 
 button.suggested-action.flat:checked {
-  background-color: rgba(255, 138, 101, 0.3);
+  background-color: rgba(241, 176, 141, 0.3);
 }
 
 button.destructive-action {
-  background-color: #F44336;
-  color: #FFFFFF;
+  background-color: #ea999c;
+  color: rgba(0, 0, 0, 0.87);
   box-shadow: none;
 }
 
@@ -1174,24 +941,24 @@ button.destructive-action:disabled {
 }
 
 button.destructive-action:hover {
-  box-shadow: inset 0 0 0 9999px transparent, 0 2px 2.4px -1px rgba(244, 67, 54, 0.2), 0 4px 3px 0 rgba(244, 67, 54, 0.14), 0 1px 6px 0 rgba(244, 67, 54, 0.12);
+  box-shadow: inset 0 0 0 9999px transparent, 0 2px 2.4px -1px rgba(234, 153, 156, 0.2), 0 4px 3px 0 rgba(234, 153, 156, 0.14), 0 1px 6px 0 rgba(234, 153, 156, 0.12);
 }
 
 button.destructive-action:checked {
-  background-color: #f77b72;
+  background-color: rgba(176, 115, 117, 0.961);
 }
 
 button.destructive-action:checked:hover {
-  box-shadow: inset 0 0 0 9999px transparent, 0 3px 3px -3px rgba(244, 67, 54, 0.3), 0 2px 3px -1px rgba(244, 67, 54, 0.24), 0 2px 5px 0 rgba(244, 67, 54, 0.12);
+  box-shadow: inset 0 0 0 9999px transparent, 0 3px 3px -3px rgba(234, 153, 156, 0.3), 0 2px 3px -1px rgba(234, 153, 156, 0.24), 0 2px 5px 0 rgba(234, 153, 156, 0.12);
 }
 
 button.destructive-action:focus {
-  box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.35);
+  box-shadow: 0 0 0 2px rgba(234, 153, 156, 0.35);
 }
 
 button.destructive-action.flat {
   background-color: transparent;
-  color: #F44336;
+  color: #ea999c;
 }
 
 button.destructive-action.flat:disabled {
@@ -1201,7 +968,7 @@ button.destructive-action.flat:disabled {
 }
 
 button.destructive-action.flat:checked {
-  background-color: rgba(244, 67, 54, 0.3);
+  background-color: rgba(234, 153, 156, 0.3);
 }
 
 .stack-switcher > button > label {
@@ -1267,20 +1034,20 @@ button.color {
 /*********
  * Links *
  *********/
-*:link {
-  color: #3c84f7;
+*:link, link {
+  color: #5bd3f8;
 }
 
 *:visited {
-  color: #BA68C8;
+  color: #babbf1;
 }
 
 button.link:link, button.link:link:focus, button.link:link:hover, button.link:link:active {
-  color: #3c84f7;
+  color: #5bd3f8;
 }
 
 button.link:visited, button.link:visited:focus, button.link:visited:hover, button.link:visited:active {
-  color: #BA68C8;
+  color: #babbf1;
 }
 
 button.link > label {
@@ -1466,7 +1233,7 @@ button.combo:only-child:hover {
 
 button.combo:only-child:checked {
   background-color: rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 0 0 2px #FF8A65;
+  box-shadow: inset 0 0 0 2px #f1b08d;
 }
 
 button.combo:only-child:disabled {
@@ -1489,10 +1256,10 @@ toolbar {
 }
 
 frame.documents-dropdown, .app-notification, toolbar.osd {
-  transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
+  transition: box-shadow 200ms ease-out;
   padding: 4px;
   border-radius: 12px;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #414559;
 }
 
@@ -1547,7 +1314,7 @@ toolbar:not(.inline-toolbar):not(.osd) switch {
 }
 
 .toolbar {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 frame .toolbar {
@@ -1559,7 +1326,7 @@ frame .toolbar {
   border-style: solid;
   border-width: 0 1px 1px;
   border-color: rgba(255, 255, 255, 0.12);
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 .frame .inline-toolbar {
@@ -1649,7 +1416,7 @@ searchbar > revealer > box {
 
 .titlebar {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
-  background-color: #232634;
+  background-color: #292C3C;
   color: #FFFFFF;
   border-radius: 12px 12px 0 0;
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
@@ -1698,7 +1465,7 @@ searchbar > revealer > box {
 }
 
 .titlebar + separator, .titlebar + separator.sidebar {
-  background-color: #232634;
+  background-color: #292C3C;
   background-image: none;
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
@@ -1709,11 +1476,11 @@ searchbar > revealer > box {
 }
 
 .titlebar.selection-mode + separator, .titlebar.selection-mode + separator.sidebar, .selection-mode .titlebar + separator, .selection-mode .titlebar + separator.sidebar {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 .titlebar.selection-mode + separator:backdrop, .titlebar.selection-mode + separator.sidebar:backdrop, .selection-mode .titlebar + separator:backdrop, .selection-mode .titlebar + separator.sidebar:backdrop {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 .background.csd.unified .titlebar + separator, .background.csd.unified .titlebar + separator.sidebar {
@@ -1731,7 +1498,7 @@ searchbar > revealer > box {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.titlebar .path-bar button.text-button:not(.suggested-action):not(.destructive-action) {
+.titlebar .path-bar button:not(.suggested-action):not(.destructive-action).text-button {
   min-width: 0;
   padding-left: 4px;
   padding-right: 4px;
@@ -1740,14 +1507,14 @@ searchbar > revealer > box {
 .titlebar.selection-mode {
   transition: background-color 0.1ms 225ms, color 75ms cubic-bezier(0, 0, 0.2, 1);
   animation: ripple-on-headerbar 225ms cubic-bezier(0, 0, 0.2, 1);
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12), inset 0 1px rgba(255, 255, 255, 0.2);
 }
 
 .titlebar.selection-mode:backdrop {
   color: rgba(0, 0, 0, 0.6);
-  background-color: #ffa184;
+  background-color: #f4c3a8;
 }
 
 .titlebar.selection-mode .subtitle:link {
@@ -1808,7 +1575,7 @@ searchbar > revealer > box {
   padding: 4px 8px;
   border-radius: 12px 12px 0 0;
   border: none;
-  background-color: #232634;
+  background-color: #292C3C;
   background-image: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
 }
@@ -1848,7 +1615,7 @@ headerbar {
 }
 
 box.vertical headerbar {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 headerbar entry,
@@ -2011,11 +1778,11 @@ treeview.view:drop(active) {
   border-color: alpha(currentColor, 0.08);
 }
 
-treeview.view.after:drop(active) {
+treeview.view:drop(active).after {
   border-top-style: none;
 }
 
-treeview.view.before:drop(active) {
+treeview.view:drop(active).before {
   border-bottom-style: none;
 }
 
@@ -2044,7 +1811,7 @@ treeview.view.expander:disabled {
 treeview.view.progressbar {
   border: none;
   box-shadow: none;
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   background-image: none;
   border-radius: 9999px;
   color: rgba(0, 0, 0, 0.87);
@@ -2052,7 +1819,7 @@ treeview.view.progressbar {
 
 treeview.view.progressbar:selected, treeview.view.progressbar:selected:hover, treeview.view.progressbar:selected:focus {
   box-shadow: none;
-  background-color: #ff9c7c;
+  background-color: #f3bc9e;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -2114,11 +1881,11 @@ treeview.view header.button.dnd {
   box-shadow: none;
   background-color: #303446;
   background-clip: border-box;
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 treeview.view acceleditor > label {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 /*********
@@ -2128,7 +1895,7 @@ menubar,
 .menubar {
   -GtkWidget-window-dragging: true;
   padding: 0;
-  background-color: #232634;
+  background-color: #292C3C;
   color: #FFFFFF;
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12);
 }
@@ -2291,7 +2058,7 @@ menu separator {
  * Popovers *
  ************/
 popover.background {
-  transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
+  transition: box-shadow 200ms ease-out;
   padding: 0;
   background-color: #414559;
   border-radius: 10px;
@@ -2299,7 +2066,7 @@ popover.background {
 
 popover.background, .csd popover.background {
   border: none;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 popover.background:backdrop, .csd popover.background:backdrop {
@@ -2515,6 +2282,10 @@ notebook > header tab button.close-button {
   min-height: 22px;
 }
 
+notebook > header.top tabs > tab + tab, notebook > header.bottom tabs > tab + tab {
+  margin-left: 2px;
+}
+
 notebook > header.top tabs:not(:only-child):first-child, notebook > header.bottom tabs:not(:only-child):first-child {
   margin-left: 0;
 }
@@ -2527,6 +2298,10 @@ notebook > header.top tabs tab.reorderable-page, notebook > header.bottom tabs t
   border-style: solid;
 }
 
+notebook > header.left tabs > tab + tab, notebook > header.right tabs > tab + tab {
+  margin-top: 2px;
+}
+
 notebook > header.left tabs:not(:only-child):first-child, notebook > header.right tabs:not(:only-child):first-child {
   margin-top: 0;
 }
@@ -2537,6 +2312,12 @@ notebook > header.left tabs:not(:only-child):last-child, notebook > header.right
 
 notebook > header.left tabs tab.reorderable-page, notebook > header.right tabs tab.reorderable-page {
   border-style: solid;
+}
+
+notebook > header > button.image-button {
+  min-height: 22px;
+  min-width: 22px;
+  padding: 2px;
 }
 
 notebook > stack:not(:only-child) {
@@ -2639,19 +2420,19 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) button:disabled {
   background-color: rgba(255, 255, 255, 0.32);
 }
 
-scrollbar.overlay-indicator.horizontal:not(.dragging):not(.hovering) slider {
+scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
   min-width: 24px;
 }
 
-scrollbar.overlay-indicator.horizontal:not(.dragging):not(.hovering) button {
+scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal button {
   min-width: 8px;
 }
 
-scrollbar.overlay-indicator.vertical:not(.dragging):not(.hovering) slider {
+scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical slider {
   min-height: 24px;
 }
 
-scrollbar.overlay-indicator.vertical:not(.dragging):not(.hovering) button {
+scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical button {
   min-height: 8px;
 }
 
@@ -2705,7 +2486,7 @@ switch {
 }
 
 switch:checked {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 switch:disabled {
@@ -2792,6 +2573,11 @@ radio:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+check:focus,
+radio:focus {
+  outline: none;
+}
+
 check:disabled,
 radio:disabled {
   background-color: rgba(255, 255, 255, 0.04);
@@ -2801,28 +2587,28 @@ check:checked, check:indeterminate,
 radio:checked,
 radio:indeterminate {
   color: rgba(0, 0, 0, 0.87);
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 check:checked:hover, check:indeterminate:hover,
 radio:checked:hover,
 radio:indeterminate:hover {
-  box-shadow: 0 0 0 6px rgba(255, 138, 101, 0.15);
-  background-color: #ffb198;
+  box-shadow: 0 0 0 6px rgba(241, 176, 141, 0.15);
+  background-color: #f7cfba;
 }
 
 check:checked:active, check:indeterminate:active,
 radio:checked:active,
 radio:indeterminate:active {
-  box-shadow: 0 0 0 6px rgba(255, 138, 101, 0.2);
-  background-color: #FF8A65;
+  box-shadow: 0 0 0 6px rgba(241, 176, 141, 0.2);
+  background-color: #f1b08d;
 }
 
 check:checked:disabled, check:indeterminate:disabled,
 radio:checked:disabled,
 radio:indeterminate:disabled {
   color: rgba(0, 0, 0, 0.38);
-  background-color: rgba(255, 138, 101, 0.35);
+  background-color: rgba(241, 176, 141, 0.35);
 }
 
 popover modelbutton.flat check, popover modelbutton.flat check:focus, popover modelbutton.flat check:hover, popover modelbutton.flat check:focus:hover, popover modelbutton.flat check:active, popover modelbutton.flat check:disabled, popover modelbutton.flat radio, popover modelbutton.flat radio:focus, popover modelbutton.flat radio:hover, popover modelbutton.flat radio:focus:hover, popover modelbutton.flat radio:active, popover modelbutton.flat radio:disabled {
@@ -2936,7 +2722,7 @@ treeview.view radio, treeview.view radio:hover, treeview.view radio:disabled, tr
 }
 
 treeview.view radio:checked, treeview.view radio:indeterminate, treeview.view check:checked, treeview.view check:indeterminate, treeview.view:hover radio:checked, treeview.view:hover radio:indeterminate, treeview.view:hover check:checked, treeview.view:hover check:indeterminate, treeview.view:selected radio:checked, treeview.view:selected radio:indeterminate, treeview.view:selected check:checked, treeview.view:selected check:indeterminate {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
   background-image: none;
 }
@@ -2991,7 +2777,7 @@ scale trough:disabled {
 
 scale highlight {
   transition: background-image 75ms cubic-bezier(0, 0, 0.2, 1);
-  background-image: image(#FF8A65);
+  background-image: image(#f1b08d);
 }
 
 scale highlight:disabled {
@@ -3011,17 +2797,17 @@ scale fill:disabled {
 scale slider {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 9999px;
-  color: #FF8A65;
+  color: #f1b08d;
   background-color: #303446;
-  box-shadow: inset 0 0 0 2px #FF8A65;
+  box-shadow: inset 0 0 0 2px #f1b08d;
 }
 
 scale slider:hover {
-  box-shadow: inset 0 0 0 2px #FF8A65, 0 0 0 8px rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 0 0 2px #f1b08d, 0 0 0 8px rgba(255, 255, 255, 0.12);
 }
 
 scale slider:active {
-  box-shadow: inset 0 0 0 4px #FF8A65, 0 0 0 8px rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 0 0 4px #f1b08d, 0 0 0 8px rgba(255, 255, 255, 0.12);
 }
 
 scale slider:disabled {
@@ -3333,7 +3119,7 @@ progressbar trough {
 
 progressbar progress {
   border-radius: 6px;
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 progressbar.osd {
@@ -3347,7 +3133,7 @@ progressbar.osd trough {
 }
 
 progressbar.osd progress {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 progressbar trough.empty progress {
@@ -3386,15 +3172,15 @@ levelbar trough {
 }
 
 levelbar block.low {
-  background-color: #FBC02D;
+  background-color: #ebd6ab;
 }
 
 levelbar block.high, levelbar block:not(.empty) {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 levelbar block.full {
-  background-color: #66BB6A;
+  background-color: #aed594;
 }
 
 levelbar block.empty {
@@ -3514,7 +3300,7 @@ separator {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-preferences stacksidebar.sidebar list separator, hdyleaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group) separator, leaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group) separator, box.horizontal > stack.background > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group) separator, window.background.csd > leaflet > box.vertical > scrolledwindow.view > viewport.frame > stack list separator,
+preferences stacksidebar.sidebar list separator, hdyleaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup) separator, leaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup) separator, box.horizontal > stack.background > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup) separator, window.background.csd > leaflet > box.vertical > scrolledwindow.view > viewport.frame > stack list separator,
 window.background.csd > hdyleaflet > box.vertical > scrolledwindow.view > viewport.frame > stack list separator,
 window.background.csd > box.horizontal > box.vertical > scrolledwindow.view > viewport.frame > stack list separator, .tweak-categories separator, placessidebar.sidebar list > separator, stacksidebar.sidebar + separator.vertical,
 stacksidebar.sidebar separator.horizontal, button.font separator, button.file separator {
@@ -3534,7 +3320,7 @@ window.background.csd > stack > box > stack > scrolledwindow > viewport frame > 
 window.background.csd > stack > box > stack > box > scrolledwindow > viewport > frame > list,
 window.background.csd > stack > grid > scrolledwindow > viewport > box > frame > list, window.background.csd > stack > list,
 window.background.csd > stack > scrolledwindow > viewport > box > list,
-window.background.csd > box > stack > scrolledwindow > viewport > box > list, preferencesgroup list, .geary-accounts-editor-pane list, window.background.csd.unified > deck > deck > deck list, hdyleaflet list.view, hdyleaflet list.frame, leaflet list.view, leaflet list.frame, box.horizontal > stack.background list.view, box.horizontal > stack.background list.frame, hdyleaflet stack.background scrolledwindow > viewport list, hdyleaflet overlay scrolledwindow > viewport list, leaflet stack.background scrolledwindow > viewport list, leaflet overlay scrolledwindow > viewport list, box.horizontal > stack.background stack.background scrolledwindow > viewport list, box.horizontal > stack.background overlay scrolledwindow > viewport list, hdyleaflet frame:not(.view) list:not(.contacts-contact-list), leaflet frame:not(.view) list:not(.contacts-contact-list), box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list), list.tweak-group list, .tweak-group-startup, list.content:not(.conversation-listbox) {
+window.background.csd > box > stack > scrolledwindow > viewport > box > list, preferencesgroup list, .geary-accounts-editor-pane list, window.background.csd.unified > deck > deck > deck list, hdyleaflet list.view, hdyleaflet list.frame, leaflet list.view, leaflet list.frame, box.horizontal > stack.background list.view, box.horizontal > stack.background list.frame, hdyleaflet stack.background scrolledwindow > viewport list, hdyleaflet overlay scrolledwindow > viewport list, leaflet stack.background scrolledwindow > viewport list, leaflet overlay scrolledwindow > viewport list, box.horizontal > stack.background stack.background scrolledwindow > viewport list, box.horizontal > stack.background overlay scrolledwindow > viewport list, hdyleaflet frame:not(.view) list:not(.contacts-contact-list), leaflet frame:not(.view) list:not(.contacts-contact-list), box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list), list.tweak-group list, list#ListBoxTweakGroup list, .tweak-group-startup, list.content:not(.conversation-listbox) {
   border-radius: 7px;
   box-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -3544,7 +3330,7 @@ window.background.csd stack stack stack frame > list > separator,
 window.background.csd > stack > stack > box > frame > list > separator,
 window.background.csd > stack > box > stack > scrolledwindow > viewport frame > list > separator,
 window.background.csd > stack > grid > scrolledwindow > viewport > box > frame > list > separator, window.background.csd > stack > list > separator,
-window.background.csd > stack > scrolledwindow > viewport > box > list > separator, preferencesgroup list > separator, .geary-accounts-editor-pane list > separator, window.background.csd.unified > deck > deck > deck list > separator, hdyleaflet list.view > separator, hdyleaflet list.frame > separator, leaflet list.view > separator, leaflet list.frame > separator, box.horizontal > stack.background list.view > separator, box.horizontal > stack.background list.frame > separator, hdyleaflet stack.background scrolledwindow > viewport list > separator, hdyleaflet overlay scrolledwindow > viewport list > separator, leaflet stack.background scrolledwindow > viewport list > separator, leaflet overlay scrolledwindow > viewport list > separator, box.horizontal > stack.background stack.background scrolledwindow > viewport list > separator, box.horizontal > stack.background overlay scrolledwindow > viewport list > separator, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) > separator, leaflet frame:not(.view) list:not(.contacts-contact-list) > separator, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) > separator, list.tweak-group list > separator, .tweak-group-startup > separator, list.content:not(.conversation-listbox) > separator {
+window.background.csd > stack > scrolledwindow > viewport > box > list > separator, preferencesgroup list > separator, .geary-accounts-editor-pane list > separator, window.background.csd.unified > deck > deck > deck list > separator, hdyleaflet list.view > separator, hdyleaflet list.frame > separator, leaflet list.view > separator, leaflet list.frame > separator, box.horizontal > stack.background list.view > separator, box.horizontal > stack.background list.frame > separator, hdyleaflet stack.background scrolledwindow > viewport list > separator, hdyleaflet overlay scrolledwindow > viewport list > separator, leaflet stack.background scrolledwindow > viewport list > separator, leaflet overlay scrolledwindow > viewport list > separator, box.horizontal > stack.background stack.background scrolledwindow > viewport list > separator, box.horizontal > stack.background overlay scrolledwindow > viewport list > separator, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) > separator, leaflet frame:not(.view) list:not(.contacts-contact-list) > separator, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) > separator, list.tweak-group list > separator, list#ListBoxTweakGroup list > separator, .tweak-group-startup > separator, list.content:not(.conversation-listbox) > separator {
   background: none;
   min-height: 0;
 }
@@ -3553,29 +3339,29 @@ window.background.csd stack stack stack frame > list row,
 window.background.csd > stack > stack > box > frame > list row,
 window.background.csd > stack > box > stack > scrolledwindow > viewport frame > list row,
 window.background.csd > stack > grid > scrolledwindow > viewport > box > frame > list row, window.background.csd > stack > list row,
-window.background.csd > stack > scrolledwindow > viewport > box > list row, preferencesgroup list row, .geary-accounts-editor-pane list row, window.background.csd.unified > deck > deck > deck list row, hdyleaflet list.view row, hdyleaflet list.frame row, leaflet list.view row, leaflet list.frame row, box.horizontal > stack.background list.view row, box.horizontal > stack.background list.frame row, hdyleaflet stack.background scrolledwindow > viewport list row, hdyleaflet overlay scrolledwindow > viewport list row, leaflet stack.background scrolledwindow > viewport list row, leaflet overlay scrolledwindow > viewport list row, box.horizontal > stack.background stack.background scrolledwindow > viewport list row, box.horizontal > stack.background overlay scrolledwindow > viewport list row, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row, leaflet frame:not(.view) list:not(.contacts-contact-list) row, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row, list.tweak-group list row, .tweak-group-startup row, list.content:not(.conversation-listbox) > row {
+window.background.csd > stack > scrolledwindow > viewport > box > list row, preferencesgroup list row, .geary-accounts-editor-pane list row, window.background.csd.unified > deck > deck > deck list row, hdyleaflet list.view row, hdyleaflet list.frame row, leaflet list.view row, leaflet list.frame row, box.horizontal > stack.background list.view row, box.horizontal > stack.background list.frame row, hdyleaflet stack.background scrolledwindow > viewport list row, hdyleaflet overlay scrolledwindow > viewport list row, leaflet stack.background scrolledwindow > viewport list row, leaflet overlay scrolledwindow > viewport list row, box.horizontal > stack.background stack.background scrolledwindow > viewport list row, box.horizontal > stack.background overlay scrolledwindow > viewport list row, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row, leaflet frame:not(.view) list:not(.contacts-contact-list) row, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row, list.tweak-group list row, list#ListBoxTweakGroup list row, .tweak-group-startup > row, list.content:not(.conversation-listbox) > row {
   border-radius: 0;
 }
 
-window.background.csd stack stack stack frame > list row:not(:first-child), window.background.csd > stack > list row:not(:first-child), preferencesgroup list row:not(:first-child), .geary-accounts-editor-pane list row:not(:first-child), window.background.csd.unified > deck > deck > deck list row:not(:first-child), hdyleaflet list.view row:not(:first-child), hdyleaflet list.frame row:not(:first-child), leaflet list.view row:not(:first-child), leaflet list.frame row:not(:first-child), box.horizontal > stack.background list.view row:not(:first-child), box.horizontal > stack.background list.frame row:not(:first-child), hdyleaflet stack.background scrolledwindow > viewport list row:not(:first-child), hdyleaflet overlay scrolledwindow > viewport list row:not(:first-child), leaflet stack.background scrolledwindow > viewport list row:not(:first-child), leaflet overlay scrolledwindow > viewport list row:not(:first-child), box.horizontal > stack.background stack.background scrolledwindow > viewport list row:not(:first-child), box.horizontal > stack.background overlay scrolledwindow > viewport list row:not(:first-child), hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:not(:first-child), leaflet frame:not(.view) list:not(.contacts-contact-list) row:not(:first-child), box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:not(:first-child), list.tweak-group list row:not(:first-child), .tweak-group-startup row:not(:first-child), list.content:not(.conversation-listbox) > row:not(:first-child) {
+window.background.csd stack stack stack frame > list row:not(:first-child), window.background.csd > stack > list row:not(:first-child), preferencesgroup list row:not(:first-child), .geary-accounts-editor-pane list row:not(:first-child), window.background.csd.unified > deck > deck > deck list row:not(:first-child), hdyleaflet list.view row:not(:first-child), hdyleaflet list.frame row:not(:first-child), leaflet list.view row:not(:first-child), leaflet list.frame row:not(:first-child), box.horizontal > stack.background list.view row:not(:first-child), box.horizontal > stack.background list.frame row:not(:first-child), hdyleaflet stack.background scrolledwindow > viewport list row:not(:first-child), hdyleaflet overlay scrolledwindow > viewport list row:not(:first-child), leaflet stack.background scrolledwindow > viewport list row:not(:first-child), leaflet overlay scrolledwindow > viewport list row:not(:first-child), box.horizontal > stack.background stack.background scrolledwindow > viewport list row:not(:first-child), box.horizontal > stack.background overlay scrolledwindow > viewport list row:not(:first-child), hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:not(:first-child), leaflet frame:not(.view) list:not(.contacts-contact-list) row:not(:first-child), box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:not(:first-child), list.tweak-group list row:not(:first-child), list#ListBoxTweakGroup list row:not(:first-child), .tweak-group-startup > row:not(:first-child), list.content:not(.conversation-listbox) > row:not(:first-child) {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-window.background.csd stack stack stack frame > list row:first-child, window.background.csd > stack > list row:first-child, preferencesgroup list row:first-child, .geary-accounts-editor-pane list row:first-child, window.background.csd.unified > deck > deck > deck list row:first-child, hdyleaflet list.view row:first-child, hdyleaflet list.frame row:first-child, leaflet list.view row:first-child, leaflet list.frame row:first-child, box.horizontal > stack.background list.view row:first-child, box.horizontal > stack.background list.frame row:first-child, hdyleaflet stack.background scrolledwindow > viewport list row:first-child, hdyleaflet overlay scrolledwindow > viewport list row:first-child, leaflet stack.background scrolledwindow > viewport list row:first-child, leaflet overlay scrolledwindow > viewport list row:first-child, box.horizontal > stack.background stack.background scrolledwindow > viewport list row:first-child, box.horizontal > stack.background overlay scrolledwindow > viewport list row:first-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:first-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row:first-child, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:first-child, list.tweak-group list row:first-child, .tweak-group-startup row:first-child, list.content:not(.conversation-listbox) > row:first-child {
+window.background.csd stack stack stack frame > list row:first-child, window.background.csd > stack > list row:first-child, preferencesgroup list row:first-child, .geary-accounts-editor-pane list row:first-child, window.background.csd.unified > deck > deck > deck list row:first-child, hdyleaflet list.view row:first-child, hdyleaflet list.frame row:first-child, leaflet list.view row:first-child, leaflet list.frame row:first-child, box.horizontal > stack.background list.view row:first-child, box.horizontal > stack.background list.frame row:first-child, hdyleaflet stack.background scrolledwindow > viewport list row:first-child, hdyleaflet overlay scrolledwindow > viewport list row:first-child, leaflet stack.background scrolledwindow > viewport list row:first-child, leaflet overlay scrolledwindow > viewport list row:first-child, box.horizontal > stack.background stack.background scrolledwindow > viewport list row:first-child, box.horizontal > stack.background overlay scrolledwindow > viewport list row:first-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:first-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row:first-child, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:first-child, list.tweak-group list row:first-child, list#ListBoxTweakGroup list row:first-child, .tweak-group-startup > row:first-child, list.content:not(.conversation-listbox) > row:first-child {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
-window.background.csd stack stack stack frame > list row:last-child, window.background.csd > stack > list row:last-child, preferencesgroup list row:last-child, .geary-accounts-editor-pane list row:last-child, window.background.csd.unified > deck > deck > deck list row:last-child, hdyleaflet list.view row:last-child, hdyleaflet list.frame row:last-child, leaflet list.view row:last-child, leaflet list.frame row:last-child, box.horizontal > stack.background list.view row:last-child, box.horizontal > stack.background list.frame row:last-child, hdyleaflet stack.background scrolledwindow > viewport list row:last-child, hdyleaflet overlay scrolledwindow > viewport list row:last-child, leaflet stack.background scrolledwindow > viewport list row:last-child, leaflet overlay scrolledwindow > viewport list row:last-child, box.horizontal > stack.background stack.background scrolledwindow > viewport list row:last-child, box.horizontal > stack.background overlay scrolledwindow > viewport list row:last-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:last-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row:last-child, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:last-child, list.tweak-group list row:last-child, .tweak-group-startup row:last-child, list.content:not(.conversation-listbox) > row:last-child {
+window.background.csd stack stack stack frame > list row:last-child, window.background.csd > stack > list row:last-child, preferencesgroup list row:last-child, .geary-accounts-editor-pane list row:last-child, window.background.csd.unified > deck > deck > deck list row:last-child, hdyleaflet list.view row:last-child, hdyleaflet list.frame row:last-child, leaflet list.view row:last-child, leaflet list.frame row:last-child, box.horizontal > stack.background list.view row:last-child, box.horizontal > stack.background list.frame row:last-child, hdyleaflet stack.background scrolledwindow > viewport list row:last-child, hdyleaflet overlay scrolledwindow > viewport list row:last-child, leaflet stack.background scrolledwindow > viewport list row:last-child, leaflet overlay scrolledwindow > viewport list row:last-child, box.horizontal > stack.background stack.background scrolledwindow > viewport list row:last-child, box.horizontal > stack.background overlay scrolledwindow > viewport list row:last-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:last-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row:last-child, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:last-child, list.tweak-group list row:last-child, list#ListBoxTweakGroup list row:last-child, .tweak-group-startup > row:last-child, list.content:not(.conversation-listbox) > row:last-child {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
 
-window.background.csd stack stack stack frame > list row:only-child, window.background.csd > stack > list row:only-child, preferencesgroup list row:only-child, .geary-accounts-editor-pane list row:only-child, window.background.csd.unified > deck > deck > deck list row:only-child, hdyleaflet list.view row:only-child, hdyleaflet list.frame row:only-child, leaflet list.view row:only-child, leaflet list.frame row:only-child, box.horizontal > stack.background list.view row:only-child, box.horizontal > stack.background list.frame row:only-child, hdyleaflet stack.background scrolledwindow > viewport list row:only-child, hdyleaflet overlay scrolledwindow > viewport list row:only-child, leaflet stack.background scrolledwindow > viewport list row:only-child, leaflet overlay scrolledwindow > viewport list row:only-child, box.horizontal > stack.background stack.background scrolledwindow > viewport list row:only-child, box.horizontal > stack.background overlay scrolledwindow > viewport list row:only-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:only-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row:only-child, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:only-child, list.tweak-group list row:only-child, .tweak-group-startup row:only-child, list.content:not(.conversation-listbox) > row:only-child {
+window.background.csd stack stack stack frame > list row:only-child, window.background.csd > stack > list row:only-child, preferencesgroup list row:only-child, .geary-accounts-editor-pane list row:only-child, window.background.csd.unified > deck > deck > deck list row:only-child, hdyleaflet list.view row:only-child, hdyleaflet list.frame row:only-child, leaflet list.view row:only-child, leaflet list.frame row:only-child, box.horizontal > stack.background list.view row:only-child, box.horizontal > stack.background list.frame row:only-child, hdyleaflet stack.background scrolledwindow > viewport list row:only-child, hdyleaflet overlay scrolledwindow > viewport list row:only-child, leaflet stack.background scrolledwindow > viewport list row:only-child, leaflet overlay scrolledwindow > viewport list row:only-child, box.horizontal > stack.background stack.background scrolledwindow > viewport list row:only-child, box.horizontal > stack.background overlay scrolledwindow > viewport list row:only-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:only-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row:only-child, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:only-child, list.tweak-group list row:only-child, list#ListBoxTweakGroup list row:only-child, .tweak-group-startup > row:only-child, list.content:not(.conversation-listbox) > row:only-child {
   border-radius: 6px;
 }
 
-window.background.csd stack stack stack frame > list row:focus, window.background.csd > stack > list row:focus, preferencesgroup list row:focus, .geary-accounts-editor-pane list row:focus, window.background.csd.unified > deck > deck > deck list row:focus, hdyleaflet list.view row:focus, hdyleaflet list.frame row:focus, leaflet list.view row:focus, leaflet list.frame row:focus, box.horizontal > stack.background list.view row:focus, box.horizontal > stack.background list.frame row:focus, hdyleaflet stack.background scrolledwindow > viewport list row:focus, hdyleaflet overlay scrolledwindow > viewport list row:focus, leaflet stack.background scrolledwindow > viewport list row:focus, leaflet overlay scrolledwindow > viewport list row:focus, box.horizontal > stack.background stack.background scrolledwindow > viewport list row:focus, box.horizontal > stack.background overlay scrolledwindow > viewport list row:focus, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:focus, leaflet frame:not(.view) list:not(.contacts-contact-list) row:focus, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:focus, list.tweak-group list row:focus, .tweak-group-startup row:focus, list.content:not(.conversation-listbox) > row:focus {
+window.background.csd stack stack stack frame > list row:focus, window.background.csd > stack > list row:focus, preferencesgroup list row:focus, .geary-accounts-editor-pane list row:focus, window.background.csd.unified > deck > deck > deck list row:focus, hdyleaflet list.view row:focus, hdyleaflet list.frame row:focus, leaflet list.view row:focus, leaflet list.frame row:focus, box.horizontal > stack.background list.view row:focus, box.horizontal > stack.background list.frame row:focus, hdyleaflet stack.background scrolledwindow > viewport list row:focus, hdyleaflet overlay scrolledwindow > viewport list row:focus, leaflet stack.background scrolledwindow > viewport list row:focus, leaflet overlay scrolledwindow > viewport list row:focus, box.horizontal > stack.background stack.background scrolledwindow > viewport list row:focus, box.horizontal > stack.background overlay scrolledwindow > viewport list row:focus, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:focus, leaflet frame:not(.view) list:not(.contacts-contact-list) row:focus, box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:focus, list.tweak-group list row:focus, list#ListBoxTweakGroup list row:focus, .tweak-group-startup > row:focus, list.content:not(.conversation-listbox) > row:focus {
   box-shadow: inset 0 0 0 1000px alpha(currentColor, 0.05);
 }
 
@@ -3652,14 +3438,15 @@ row:selected:disabled label {
  *********************/
 .app-notification {
   margin: 8px;
+  padding: 4px 10px;
+}
+
+.app-notification button.flat:last-child {
+  margin-right: -6px;
 }
 
 .app-notification button.text-button:not(:disabled) {
-  color: #FF8A65;
-}
-
-.app-notification > box > label {
-  margin-left: 6px;
+  color: #f1b08d;
 }
 
 .app-notification.frame,
@@ -3731,11 +3518,11 @@ calendar:indeterminate {
  * Dialogs *
  ***********/
 messagedialog.background {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 messagedialog.background .titlebar, messagedialog.background .titlebar:backdrop {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 messagedialog.background.csd {
@@ -3766,11 +3553,11 @@ messagedialog .dialog-action-box button:not(:last-child), messagedialog .dialog-
 }
 
 messagedialog .dialog-action-box button.suggested-action:not(:disabled), messagedialog .dialog-action-box .linked:not(.vertical) > button.suggested-action:not(:disabled) {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 messagedialog .dialog-action-box button.destructive-action:not(:disabled), messagedialog .dialog-action-box .linked:not(.vertical) > button.destructive-action:not(:disabled) {
-  color: #F44336;
+  color: #ea999c;
 }
 
 .csd filechooser {
@@ -3829,12 +3616,12 @@ filechooser actionbar, filechooser actionbar > revealer > box {
   border-style: none;
 }
 
-stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(separator):dir(ltr), .sidebar.left:not(separator) {
+stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(separator):dir(ltr), .sidebar:not(separator).left {
   border-right: 1px solid rgba(255, 255, 255, 0.12);
   border-left-style: none;
 }
 
-stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(separator):dir(rtl), .sidebar.right:not(separator) {
+stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(separator):dir(rtl), .sidebar:not(separator).right {
   border-left: 1px solid rgba(255, 255, 255, 0.12);
   border-right-style: none;
 }
@@ -3859,7 +3646,7 @@ stacksidebar.sidebar row {
 }
 
 stacksidebar.sidebar row:selected {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
   font-weight: 500;
 }
@@ -3943,11 +3730,11 @@ placessidebar.sidebar row.sidebar-placeholder-row {
 }
 
 placessidebar.sidebar row.sidebar-new-bookmark-row {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 placessidebar.sidebar row.sidebar-new-bookmark-row image.sidebar-icon {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 placessidebar.sidebar row:drop(active) {
@@ -4040,15 +3827,15 @@ infobar.info > revealer > box, infobar.info:hover > revealer > box, infobar.info
 }
 
 infobar.info > revealer > box, infobar.info > revealer > box link:link, infobar.info > revealer > box flowboxchild, infobar.info:hover > revealer > box, infobar.info:hover > revealer > box link:link, infobar.info:hover > revealer > box flowboxchild, infobar.info:backdrop > revealer > box, infobar.info:backdrop > revealer > box link:link, infobar.info:backdrop > revealer > box flowboxchild {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 infobar.info > revealer > box button.text-button:not(:disabled):not(.suggested-action):not(.destructive-action), infobar.info:hover > revealer > box button.text-button:not(:disabled):not(.suggested-action):not(.destructive-action), infobar.info:backdrop > revealer > box button.text-button:not(:disabled):not(.suggested-action):not(.destructive-action) {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 infobar.action > revealer > box, infobar.action:backdrop > revealer > box, infobar.question > revealer > box, infobar.question:backdrop > revealer > box {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 infobar.action > revealer > box, infobar.action > revealer > box link:link, infobar.action > revealer > box flowboxchild, infobar.action:backdrop > revealer > box, infobar.action:backdrop > revealer > box link:link, infobar.action:backdrop > revealer > box flowboxchild, infobar.question > revealer > box, infobar.question > revealer > box link:link, infobar.question > revealer > box flowboxchild, infobar.question:backdrop > revealer > box, infobar.question:backdrop > revealer > box link:link, infobar.question:backdrop > revealer > box flowboxchild {
@@ -4060,11 +3847,11 @@ infobar.action > revealer > box button, infobar.action > revealer > box button:h
 }
 
 infobar.action:hover > revealer > box, infobar.question:hover > revealer > box {
-  background-color: #ff774c;
+  background-color: #eea076;
 }
 
 infobar.warning > revealer > box, infobar.warning:backdrop > revealer > box {
-  background-color: #FBC02D;
+  background-color: #ebd6ab;
 }
 
 infobar.warning > revealer > box, infobar.warning > revealer > box link:link, infobar.warning > revealer > box flowboxchild, infobar.warning:backdrop > revealer > box, infobar.warning:backdrop > revealer > box link:link, infobar.warning:backdrop > revealer > box flowboxchild {
@@ -4076,24 +3863,24 @@ infobar.warning > revealer > box button, infobar.warning > revealer > box button
 }
 
 infobar.warning:hover > revealer > box {
-  background-color: #fbb814;
+  background-color: #e6cc96;
 }
 
 infobar.error > revealer > box, infobar.error:backdrop > revealer > box {
-  background-color: #F44336;
-  color: #FFFFFF;
+  background-color: #ea999c;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 infobar.error > revealer > box, infobar.error > revealer > box link:link, infobar.error > revealer > box flowboxchild, infobar.error:backdrop > revealer > box, infobar.error:backdrop > revealer > box link:link, infobar.error:backdrop > revealer > box flowboxchild {
-  color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 infobar.error > revealer > box button, infobar.error > revealer > box button:hover, infobar.error > revealer > box button:focus, infobar.error > revealer > box button:active, infobar.error > revealer > box button:checked, infobar.error > revealer > box button.text-button:not(:disabled), infobar.error:backdrop > revealer > box button, infobar.error:backdrop > revealer > box button:hover, infobar.error:backdrop > revealer > box button:focus, infobar.error:backdrop > revealer > box button:active, infobar.error:backdrop > revealer > box button:checked, infobar.error:backdrop > revealer > box button.text-button:not(:disabled) {
-  color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 infobar.error:hover > revealer > box {
-  background-color: #f32c1e;
+  background-color: #e68487;
 }
 
 /************
@@ -4176,11 +3963,11 @@ colorswatch.light {
 }
 
 colorswatch overlay {
-  transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
+  transition: box-shadow 200ms ease-out;
 }
 
 colorswatch overlay:hover {
-  box-shadow: 0 0 0 2px #FF8A65;
+  box-shadow: 0 0 0 2px #f1b08d;
 }
 
 colorswatch#add-color-button {
@@ -4225,9 +4012,9 @@ colorswatch#editor-color-sample overlay:hover {
 }
 
 colorchooser .popover.osd {
-  transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
+  transition: box-shadow 200ms ease-out;
   border-radius: 6px;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #414559;
 }
 
@@ -4248,13 +4035,13 @@ colorchooser .popover.osd:backdrop {
 decoration {
   transition: none;
   border-radius: 12px;
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), 0 0 36px transparent;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 15px 16px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), 0 0 36px transparent;
   margin: 10px;
 }
 
 decoration:backdrop {
-  transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 0 36px transparent;
+  transition: box-shadow 200ms ease-out;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 0 36px transparent;
 }
 
 .tiled decoration, .tiled-top decoration, .tiled-right decoration, .tiled-bottom decoration, .tiled-left decoration {
@@ -4286,7 +4073,7 @@ decoration:backdrop {
 .csd.popup decoration {
   border-radius: 10px;
   border: none;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 tooltip.csd decoration {
@@ -4307,7 +4094,7 @@ messagedialog.background.csd decoration {
   padding: 2px;
   border-radius: 0;
   box-shadow: none;
-  background-color: #232634;
+  background-color: #292C3C;
   border: 1px solid #494c5c;
 }
 
@@ -4336,7 +4123,7 @@ button.minimize.titlebutton:active:not(.suggested-action):not(.destructive-actio
 }
 
 button.minimize.titlebutton:hover:not(.suggested-action):not(.destructive-action), button.minimize.titlebutton:active:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:hover:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:active:not(.suggested-action):not(.destructive-action), button.close.titlebutton:hover:not(.suggested-action):not(.destructive-action), button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 button.minimize.titlebutton:backdrop:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:backdrop:not(.suggested-action):not(.destructive-action), button.close.titlebutton:backdrop:not(.suggested-action):not(.destructive-action) {
@@ -4348,27 +4135,27 @@ button.minimize.titlebutton:backdrop:hover:not(.suggested-action):not(.destructi
 }
 
 button.minimize.titlebutton:not(.suggested-action):not(.destructive-action) {
-  background-color: #e5c890;
+  background-color: #fdbe04;
 }
 
 button.minimize.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: #ecd6ac;
+  background-color: #fece43;
 }
 
 button.maximize.titlebutton:not(.suggested-action):not(.destructive-action) {
-  background-color: #a6d189;
+  background-color: #38c76a;
 }
 
 button.maximize.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: #bcdda7;
+  background-color: #6ad58f;
 }
 
 button.close.titlebutton:not(.suggested-action):not(.destructive-action) {
-  background-color: #e78284;
+  background-color: #fd5f51;
 }
 
 button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: #eda1a3;
+  background-color: #fe877d;
 }
 
 #MozillaGtkWidget.background headerbar.titlebar.default-decoration button.minimize.titlebutton, .background.csd headerbar.titlebar.default-decoration button.minimize.titlebutton:not(.suggested-action):not(.destructive-action), #MozillaGtkWidget.background headerbar.titlebar.default-decoration button.maximize.titlebutton, .background.csd headerbar.titlebar.default-decoration button.maximize.titlebutton:not(.suggested-action):not(.destructive-action), #MozillaGtkWidget.background headerbar.titlebar.default-decoration button.close.titlebutton, .background.csd headerbar.titlebar.default-decoration button.close.titlebutton:not(.suggested-action):not(.destructive-action) {
@@ -4396,7 +4183,7 @@ button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) 
   background-image: -gtk-scaled(url("assets/scalable/close-symbolic.svg"), url("assets/scalable/close-symbolic@2.svg"));
 }
 
-.background.csd.maximized headerbar.titlebar.default-decoration button.titlebutton.maximize:not(.suggested-action):not(.destructive-action):hover, .background.csd.maximized headerbar.titlebar.default-decoration button.titlebutton.maximize:not(.suggested-action):not(.destructive-action):active {
+.background.csd.maximized headerbar.titlebar.default-decoration button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:hover, .background.csd.maximized headerbar.titlebar.default-decoration button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:active {
   background-image: -gtk-scaled(url("assets/scalable/unmaximize-symbolic.svg"), url("assets/scalable/unmaximize-symbolic@2.svg"));
 }
 
@@ -4408,7 +4195,7 @@ button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) 
  * Touch Copy & Paste *
  **********************/
 cursor-handle {
-  color: #FF8A65;
+  color: #f1b08d;
   -gtk-icon-source: -gtk-recolor(url("assets/scalable/cursor-handle-symbolic.svg"));
 }
 
@@ -4445,7 +4232,7 @@ cursor-handle.insertion-cursor:dir(ltr), cursor-handle.insertion-cursor:dir(rtl)
 }
 
 :not(decoration):not(window):drop(active) {
-  caret-color: #FF8A65;
+  caret-color: #f1b08d;
 }
 
 stackswitcher {
@@ -4463,7 +4250,7 @@ stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destruc
   padding: 2px 8px;
 }
 
-stackswitcher.linked:not(.vertical) > button.text-button:not(.suggested-action):not(.destructive-action) {
+stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action).text-button {
   min-width: 100px;
 }
 
@@ -4513,7 +4300,7 @@ button.emoji-section {
 }
 
 button.emoji-section:checked {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 button.emoji-section:not(:last-child) {
@@ -4558,7 +4345,7 @@ popover.emoji-completion .emoji:hover {
  ************/
 .nautilus-window.background.csd {
   border-radius: 0 0 12px 12px;
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 .nautilus-window.background.csd:backdrop {
@@ -4613,7 +4400,7 @@ popover.emoji-completion .emoji:hover {
   min-width: 12px;
   box-shadow: 12px 0 #303446;
   background-color: #303446;
-  background-image: image(#3d404c);
+  background-image: image(#434553);
 }
 
 .nautilus-window.maximized, .nautilus-window.maximized placessidebar {
@@ -4626,7 +4413,7 @@ popover.emoji-completion .emoji:hover {
   margin: 4px;
   border: none;
   border-radius: 6px;
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.05), 0 2px 3px -1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.05);
 }
@@ -4702,11 +4489,11 @@ popover.emoji-completion .emoji:hover {
   margin-right: 0;
 }
 
-.path-bar-box .linked.nautilus-path-bar button.text-button:not(.suggested-action):not(.destructive-action) {
+.path-bar-box .linked.nautilus-path-bar button:not(.suggested-action):not(.destructive-action).text-button {
   min-width: 0;
 }
 
-.path-bar-box .linked.nautilus-path-bar button.text-button.image-button:not(.suggested-action):not(.destructive-action) image:not(:only-child) {
+.path-bar-box .linked.nautilus-path-bar button:not(.suggested-action):not(.destructive-action).text-button.image-button image:not(:only-child) {
   margin: 0;
 }
 
@@ -4730,11 +4517,11 @@ popover.emoji-completion .emoji:hover {
   margin-bottom: 0;
 }
 
-.windowhandle .linked.nautilus-path-bar button.current-dir:not(.suggested-action):not(.destructive-action) {
+.windowhandle .linked.nautilus-path-bar button:not(.suggested-action):not(.destructive-action).current-dir {
   color: #FFFFFF;
 }
 
-.windowhandle .linked.nautilus-path-bar button.current-dir:not(.suggested-action):not(.destructive-action):hover, .windowhandle .linked.nautilus-path-bar button.current-dir:not(.suggested-action):not(.destructive-action):active {
+.windowhandle .linked.nautilus-path-bar button:not(.suggested-action):not(.destructive-action).current-dir:hover, .windowhandle .linked.nautilus-path-bar button:not(.suggested-action):not(.destructive-action).current-dir:active {
   background: none;
   box-shadow: none;
 }
@@ -4745,8 +4532,8 @@ popover.emoji-completion .emoji:hover {
 }
 
 .disk-space-display.used {
-  background-color: #FF8A65;
-  color: #FF8A65;
+  background-color: #f1b08d;
+  color: #f1b08d;
 }
 
 .disk-space-display.free {
@@ -4762,7 +4549,7 @@ popover.emoji-completion .emoji:hover {
 }
 
 .conflict-row:not(:selected) {
-  background-color: #6d5e3f;
+  background-color: #686564;
 }
 
 .nautilus-window flowboxchild .icon-item-background {
@@ -4774,7 +4561,7 @@ popover.emoji-completion .emoji:hover {
   background-color: transparent;
 }
 
-.nautilus-window notebook .view:not(treeview) {
+.nautilus-window notebook :not(treeview).view {
   border-radius: 4px;
 }
 
@@ -4825,7 +4612,7 @@ dialog.background > box.dialog-vbox.vertical > grid.horizontal > box.horizontal:
 }
 
 .nautilus-window paned > separator {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 /*********
@@ -4853,12 +4640,12 @@ window.org-gnome-gedit > overlay > box.vertical > paned.gedit-side-panel-paned s
 }
 
 .open-document-selector-match {
-  background-color: #FBC02D;
+  background-color: #ebd6ab;
   color: rgba(0, 0, 0, 0.87);
 }
 
 .gedit-document-panel {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 .gedit-document-panel row button.flat {
@@ -4909,15 +4696,15 @@ window.org-gnome-gedit > overlay > box.vertical > paned.gedit-side-panel-paned s
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry.error ~ button {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry.error ~ button:hover, .gedit-search-slider .linked:not(.vertical) > entry.error ~ button:active {
-  color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry.error ~ button:disabled {
-  color: rgba(255, 255, 255, 0.32);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 frame.gedit-map-frame > border:dir(ltr) {
@@ -4935,12 +4722,12 @@ frame.gedit-map-frame > border:dir(rtl) {
   border-bottom-left-radius: 12px;
 }
 
-.tweak {
-  padding: 3px;
+leaflet list.navigation-sidebar {
+  background-color: #292C3C;
 }
 
-.tweak.title:hover {
-  box-shadow: none;
+window.background.csd:not(.maximized) leaflet list.navigation-sidebar {
+  border-bottom-left-radius: 12px;
 }
 
 .tweak-group-white,
@@ -4949,19 +4736,17 @@ frame.gedit-map-frame > border:dir(rtl) {
   background-image: image(#303446);
 }
 
-.tweak-startup,
-.tweak-startup:hover {
-  background-image: image(#303446);
-}
-
 .tweak-group-startup {
-  background-image: image(#303446);
+  padding: 0;
 }
 
-.tweak-group-startup row.tweak-startup {
-  border-radius: 6px;
+.tweak-group-startup > row.tweak-startup {
   background-color: transparent;
   background-image: none;
+}
+
+list.tweak-group list, list#ListBoxTweakGroup list {
+  padding: 0;
 }
 
 row#Focus,
@@ -5110,11 +4895,11 @@ dialog.background.csd > box.vertical.dialog-vbox > scrolledwindow > viewport.fra
   background-color: transparent;
 }
 
-hdyleaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group), leaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group), box.horizontal > stack.background > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group) {
+hdyleaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup), leaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup), box.horizontal > stack.background > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup) {
   padding: 2px;
 }
 
-hdyleaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group) row.activatable, leaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group) row.activatable, box.horizontal > stack.background > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group) row.activatable {
+hdyleaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup) row.activatable, leaflet > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup) row.activatable, box.horizontal > stack.background > box.vertical > scrolledwindow > viewport.frame list:not(.view):not(.tweak-group):not(.tweak-group-startup) row.activatable {
   border-radius: 6px;
 }
 
@@ -5306,7 +5091,7 @@ window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked 
 }
 
 window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked > button.image-button.raised:checked {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -5364,7 +5149,7 @@ window.background > box > .sidebar-paned > paned > box > notebook > stack > box 
 }
 
 .polari-room-list .sidebar > row.activatable:selected {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -5374,7 +5159,7 @@ stack.view.polari-entry-area {
   border-bottom-right-radius: 12px;
 }
 
-stack.view.polari-entry-area:disabled {
+stack:disabled.view.polari-entry-area {
   background-image: image(#303446);
 }
 
@@ -5394,8 +5179,8 @@ layouttab {
   margin: 0 8px;
   border-style: none solid;
   border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 -2px #FF8A65;
+  border-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -2px #f1b08d;
   background-color: #303446;
 }
 
@@ -5410,13 +5195,13 @@ layouttab button.text-button, layouttab button.image-button, layouttab button {
 }
 
 layout {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   -PnlDockBin-handle-size: 1;
 }
 
 entry.search-missing {
-  background-color: #F44336;
-  color: #FFFFFF;
+  background-color: #ea999c;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 window.workbench treeview.image {
@@ -5466,7 +5251,7 @@ entry.preferences-search {
 }
 
 preferences stacksidebar.sidebar list {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 preferences stacksidebar.sidebar:dir(ltr) list, preferences stacksidebar.sidebar:dir(rtl) list {
@@ -5516,12 +5301,12 @@ popover.transfers list row > box {
 }
 
 dockbin {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   -PnlDockBin-handle-size: 1;
 }
 
 dockpaned {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 eggsearchbar box.search-bar {
@@ -5545,7 +5330,7 @@ docktab {
   border-width: 1px;
   border-color: transparent;
   box-shadow: inset 0 -2px transparent;
-  background-image: radial-gradient(circle, #FF8A65 10%, transparent 0%);
+  background-image: radial-gradient(circle, #f1b08d 10%, transparent 0%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 0% 0%;
@@ -5560,7 +5345,7 @@ docktab:hover {
 
 docktab:checked {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 225ms cubic-bezier(0, 0, 0.2, 1), background-image 525ms cubic-bezier(0, 0, 0.2, 1);
-  box-shadow: inset 0 -2px #FF8A65;
+  box-shadow: inset 0 -2px #f1b08d;
   background-color: transparent;
   background-image: radial-gradient(circle, transparent 10%, transparent 0%);
   background-size: 1000% 1000%;
@@ -5577,11 +5362,11 @@ dockoverlayedge docktabstrip {
 }
 
 dockoverlayedge.left-edge docktab:checked {
-  box-shadow: inset -2px 0 #FF8A65;
+  box-shadow: inset -2px 0 #f1b08d;
 }
 
 dockoverlayedge.right-edge docktab:checked {
-  box-shadow: inset 2px 0 #FF8A65;
+  box-shadow: inset 2px 0 #f1b08d;
 }
 
 pillbox {
@@ -5665,7 +5450,7 @@ ideeditorutilities > dzldockpaned > box > stackswitcher button {
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher button:active {
-  background-image: radial-gradient(circle, rgba(255, 138, 101, 0.7) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(241, 176, 141, 0.7) 10%, transparent 0%);
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher button:checked {
@@ -5678,7 +5463,7 @@ ideeditorutilities > dzldockpaned > box > stackswitcher button:dir(ltr) {
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher button:dir(ltr):checked {
-  box-shadow: inset -2px 0 #FF8A65;
+  box-shadow: inset -2px 0 #f1b08d;
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher button:dir(rtl) {
@@ -5686,7 +5471,7 @@ ideeditorutilities > dzldockpaned > box > stackswitcher button:dir(rtl) {
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher button:dir(rtl):checked {
-  box-shadow: inset 2px 0 #FF8A65;
+  box-shadow: inset 2px 0 #f1b08d;
 }
 
 ideeditorsidebar notebook header {
@@ -5711,8 +5496,8 @@ GdMainIconView.content-view {
 .documents-counter {
   margin: 8px;
   border-radius: 9999px;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-  background-color: #FF8A65;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12);
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
   font-weight: bold;
 }
@@ -5771,19 +5556,19 @@ overlay grid.horizontal > revealer > scrolledwindow.frame:dir(rtl) {
 }
 
 .side-panel .view {
-  background-image: image(#232634);
+  background-image: image(#292C3C);
 }
 
 .side-panel .view:hover {
-  background-image: image(#353744);
+  background-image: image(#3a3d4c);
 }
 
 .side-panel .view:selected {
-  background-image: image(#FF8A65);
+  background-image: image(#f1b08d);
 }
 
 .side-panel .view:selected:hover {
-  background-image: image(rgba(239, 129, 95, 0.9896));
+  background-image: image(rgba(226, 165, 132, 0.9896));
 }
 
 .songs-list:hover {
@@ -5902,7 +5687,7 @@ window.background > box.vertical > box.horizontal > stack > widget > notebook.fr
 }
 
 .terminal-window tabbar tabbox {
-  background-color: #232634;
+  background-color: #292C3C;
   margin: 0;
   border-radius: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -5993,11 +5778,11 @@ frame.commit-frame > border {
  * Characters *
  **************/
 box.dialog-vbox scrolledwindow.related {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 list.categories {
-  background-image: image(#232634);
+  background-image: image(#292C3C);
 }
 
 /*********
@@ -6007,7 +5792,7 @@ list.categories {
   min-height: 24px;
   padding: 0 4px;
   border-radius: 6px;
-  background-color: #232634;
+  background-color: #292C3C;
   color: #FFFFFF;
 }
 
@@ -6058,7 +5843,7 @@ window#GearyMainWindow.background.csd stack#conversation_viewer .geary-expanded 
   color: #FFFFFF;
   background-color: #303446;
   box-shadow: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 window.background.csd.geary-main-window stack#conversation_viewer .geary-composer-box actionbar > revealer > box,
@@ -6082,7 +5867,7 @@ window#GearyMainWindow.background.csd stack#conversation_viewer .geary-composer-
 
 .geary-main-window.unified > deck > overlay > .geary-main-layout > leaflet > separator.sidebar,
 .geary-main-window.unified > deck > overlay > .geary-main-layout > leaflet > leaflet > separator.sidebar {
-  background-color: #232634;
+  background-color: #292C3C;
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12);
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), color 75ms cubic-bezier(0, 0, 0.2, 1), box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
 }
@@ -6109,7 +5894,7 @@ window#GearyMainWindow.background.csd stack#conversation_viewer .geary-composer-
 
 .geary-main-window.unified frame.geary-conversation-frame scrolledwindow treeview.view:selected, .geary-main-window.unified frame.geary-conversation-frame scrolledwindow treeview.view:active {
   border-radius: 6px;
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -6262,7 +6047,7 @@ window.background.csd.unified.fullscreen > decoration-overlay {
  *********/
 overlay > revealer.left > scrolledwindow.frame, overlay > revealer.right > scrolledwindow.frame {
   border-style: none;
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 15px 16px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12);
 }
 
 overlay > revealer.left > scrolledwindow.frame {
@@ -6323,7 +6108,7 @@ button.flat.tilix-small-button {
 }
 
 .meld-notebook-child {
-  background-color: #232634;
+  background-color: #292C3C;
   border-radius: 0 0 12px 12px;
 }
 
@@ -6360,7 +6145,7 @@ window.background.chromium > button {
 }
 
 window.background.chromium > button {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 window.background.chromium > button:disabled {
@@ -6381,7 +6166,7 @@ window.background.chromium headerbar.titlebar button:active {
 }
 
 window.background.chromium spinner {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 window.background.chromium textview.view {
@@ -6389,7 +6174,7 @@ window.background.chromium textview.view {
 }
 
 window.background.chromium treeview.view.cell:selected:focus {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -6422,7 +6207,7 @@ tooltip.background.chromium {
 }
 
 #MozillaGtkWidget > widget text:selected {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -6456,12 +6241,12 @@ tooltip.background.chromium {
 }
 
 #MozillaGtkWidget > widget > entry:focus {
-  border-color: #FF8A65;
-  box-shadow: inset 0 0 0 1px #FF8A65;
+  border-color: #f1b08d;
+  box-shadow: inset 0 0 0 1px #f1b08d;
 }
 
 #MozillaGtkWidget > widget > entry:disabled {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 #MozillaGtkWidget > widget > button > button {
@@ -6485,18 +6270,18 @@ tooltip.background.chromium {
 
 #MozillaGtkWidget > widget > checkbutton > check:not(:checked):not(:indeterminate),
 #MozillaGtkWidget > widget > radiobutton > radio:not(:checked):not(:indeterminate) {
-  color: #464646;
+  color: #51576D;
 }
 
 #MozillaGtkWidget > widget > checkbutton > check:not(:checked):not(:indeterminate):hover, #MozillaGtkWidget > widget > checkbutton > check:not(:checked):not(:indeterminate):active,
 #MozillaGtkWidget > widget > radiobutton > radio:not(:checked):not(:indeterminate):hover,
 #MozillaGtkWidget > widget > radiobutton > radio:not(:checked):not(:indeterminate):active {
-  color: #727272;
+  color: #737994;
 }
 
 #MozillaGtkWidget > widget > checkbutton > check:not(:checked):not(:indeterminate):disabled,
 #MozillaGtkWidget > widget > radiobutton > radio:not(:checked):not(:indeterminate):disabled {
-  color: rgba(70, 70, 70, 0.5);
+  color: rgba(81, 87, 109, 0.5);
 }
 
 #MozillaGtkWidget menu {
@@ -6644,7 +6429,7 @@ UnityDecoration {
   -UnityDecoration-inactive-shadow-color: rgba(0, 0, 0, 0.32);
   -UnityDecoration-inactive-shadow-radius: 6px;
   -UnityDecoration-glow-size: 8px;
-  -UnityDecoration-glow-color: #FF8A65;
+  -UnityDecoration-glow-color: #f1b08d;
   -UnityDecoration-title-indent: 4px;
   -UnityDecoration-title-fade: 32px;
   -UnityDecoration-title-alignment: 0.0;
@@ -6655,7 +6440,7 @@ UnityDecoration .top {
   border-style: none;
   border-radius: 12px 12px 0 0;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-  background-color: #232634;
+  background-color: #292C3C;
   color: #FFFFFF;
 }
 
@@ -6679,7 +6464,7 @@ UnityDecoration .menuitem:hover {
   box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 2px -1px rgba(0, 0, 0, 0.17);
 }
 
-.background:not(.csd) headerbar.inline-toolbar:not(.titlebar) {
+.background:not(.csd) headerbar:not(.titlebar).inline-toolbar {
   border-style: none;
 }
 
@@ -6709,7 +6494,39 @@ UnityPanelWidget:backdrop,
 .menu IdoPlaybackMenuItem.menuitem:active {
   -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
   animation: spin 1s linear infinite;
-  color: #FF8A65;
+  color: #f1b08d;
+}
+
+.lightdm.menu {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  color: white;
+}
+
+.lightdm.menu .menuitem *,
+.lightdm.menu .menuitem.check:active,
+.lightdm.menu .menuitem.radio:active {
+  color: white;
+}
+
+.lightdm.menubar {
+  color: rgba(255, 255, 255, 0.8);
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lightdm.menubar > .menuitem {
+  padding: 2px 6px;
+}
+
+.lightdm-combo .menu {
+  background-color: #303446;
+  border-radius: 0;
+  padding: 0;
+  color: #FFFFFF;
 }
 
 /**************
@@ -6819,7 +6636,7 @@ MatePanelAppletFrameDBus {
 
 PanelApplet.wnck-applet .wnck-pager {
   background-color: transparent;
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 PanelApplet.wnck-applet .wnck-pager:hover {
@@ -6831,7 +6648,7 @@ PanelApplet.wnck-applet .wnck-pager:active {
 }
 
 PanelApplet.wnck-applet .wnck-pager:selected {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 .mate-panel-menu-bar.horizontal #clock-applet-button label {
@@ -6843,7 +6660,7 @@ PanelApplet.wnck-applet .wnck-pager:selected {
 }
 
 #MatePanelPopupWindow {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 7px;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #414559;
@@ -6889,7 +6706,7 @@ na-tray-applet {
 }
 
 .mate-panel-applet-slider {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 7px;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #414559;
@@ -6909,7 +6726,7 @@ na-tray-applet {
 }
 
 #mate-menu {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   background-color: #414559;
 }
 
@@ -6975,7 +6792,7 @@ na-tray-applet {
 }
 
 .brisk-menu .categories-list button:checked {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 .brisk-menu .session-button {
@@ -7144,9 +6961,9 @@ na-tray-applet {
 
 /* mate-screensaver lock dialog */
 .lock-dialog {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 7px;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #414559;
 }
 
@@ -7155,7 +6972,7 @@ na-tray-applet {
 }
 
 .lock-dialog button:not(:disabled) {
-  color: #FF8A65;
+  color: #f1b08d;
 }
 
 /* multimedia OSD */
@@ -7172,7 +6989,7 @@ MsdOsdWindow.background.osd .trough {
 
 MsdOsdWindow.background.osd .progressbar {
   border-radius: 0;
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 /******************
@@ -7188,7 +7005,8 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-settings-window buttonbox.inline-toolbar {
-  border-style: none none solid;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .budgie-settings-window buttonbox.inline-toolbar button {
@@ -7201,7 +7019,7 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
 
 .budgie-popover {
   border: none;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12);
   background-color: #303446;
   border-radius: 10px;
 }
@@ -7219,7 +7037,7 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
   padding: 0;
 }
 
-.budgie-popover separator {
+.budgie-popover separator.horizontal {
   margin: 2px 0;
 }
 
@@ -7236,13 +7054,33 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
 }
 
 .budgie-popover scrolledwindow.sidebar:not(.categories) {
-  background-color: rgba(255, 255, 255, 0.04);
+  background: none;
   border-right: none;
-  border-bottom-left-radius: 10px;
+}
+
+.budgie-popover scrolledwindow.sidebar:not(.categories) list {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+  padding: 2px 0;
 }
 
 .budgie-popover scrolledwindow.sidebar:not(.categories) list > row.activatable {
   padding: 4px 6px;
+}
+
+.budgie-popover scrolledwindow.sidebar + separator {
+  margin: 0;
+  background-color: transparent;
+  min-width: 0;
+  min-height: 0;
+}
+
+.budgie-popover scrolledwindow.sidebar + separator + scrolledwindow {
+  margin-left: 2px;
+}
+
+.budgie-popover scrolledwindow.sidebar + separator + scrolledwindow list > row.activatable {
+  border-radius: 3px;
 }
 
 .budgie-popover treeview.view.sidebar {
@@ -7256,21 +7094,6 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
 
 .budgie-popover treeview.view.sidebar:selected {
   background-color: alpha(currentColor, 0.12);
-}
-
-.budgie-popover.bottom scrolledwindow.sidebar:not(.categories) {
-  padding-top: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 0;
-}
-
-.budgie-popover > frame.container > grid.horizontal > grid.horizontal > widget > grid.horizontal > stack {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.budgie-popover.bottom > frame.container > grid.horizontal > grid.horizontal > widget > grid.horizontal > stack {
-  border-top: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .budgie-popover.budgie-menu .container {
@@ -7310,7 +7133,7 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
   padding: 4px;
   margin: 4px;
   border: none;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 .budgie-popover.budgie-menu list.left-overlay-menu > row.activatable {
@@ -7335,12 +7158,16 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
   border-radius: 6px;
 }
 
+.budgie-popover.budgie-menu .budgie-menu-footer button.flat.user-icon-button {
+  padding-right: 6px;
+}
+
 .budgie-popover.budgie-menu .budgie-menu-footer button.flat.image-button {
   border-radius: 9999px;
   padding: 4px;
   min-height: 16px;
   min-width: 16px;
-  margin-left: 4px;
+  margin-left: 6px;
   background-clip: border-box;
 }
 
@@ -7360,6 +7187,14 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
 .budgie-popover.user-menu > frame.container > box.vertical row.activatable:first-child button.indicator-item {
   transition: none;
   animation: none;
+}
+
+.budgie-popover.sound-popover .container {
+  padding: 0;
+}
+
+.budgie-popover.sound-popover separator {
+  margin: 2px 0;
 }
 
 .budgie-popover.night-light-indicator .view-header {
@@ -7410,20 +7245,19 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
   border-top-width: 1px;
 }
 
-.workspace-switcher .workspace-item,
-.workspace-switcher .workspace-add-button {
+.workspace-switcher .workspace-item {
   border: 0 solid rgba(255, 255, 255, 0.12);
 }
 
-.top .workspace-switcher .workspace-item:dir(ltr), .bottom .workspace-switcher .workspace-item:dir(ltr), .top .workspace-switcher .workspace-add-button:dir(ltr), .bottom .workspace-switcher .workspace-add-button:dir(ltr) {
+.top .workspace-switcher .workspace-item:dir(ltr), .bottom .workspace-switcher .workspace-item:dir(ltr) {
   border-right-width: 1px;
 }
 
-.top .workspace-switcher .workspace-item:dir(rtl), .bottom .workspace-switcher .workspace-item:dir(rtl), .top .workspace-switcher .workspace-add-button:dir(rtl), .bottom .workspace-switcher .workspace-add-button:dir(rtl) {
+.top .workspace-switcher .workspace-item:dir(rtl), .bottom .workspace-switcher .workspace-item:dir(rtl) {
   border-left-width: 1px;
 }
 
-.left .workspace-switcher .workspace-item, .right .workspace-switcher .workspace-item, .left .workspace-switcher .workspace-add-button, .right .workspace-switcher .workspace-add-button {
+.left .workspace-switcher .workspace-item, .right .workspace-switcher .workspace-item {
   border-bottom-width: 1px;
 }
 
@@ -7435,16 +7269,14 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
   background-color: alpha(currentColor, 0.1);
 }
 
-.workspace-switcher .workspace-add-button:hover {
-  box-shadow: none;
+.workspace-switcher .workspace-add-button {
+  border-radius: 6px;
 }
 
-.workspace-switcher .workspace-add-button:active {
-  background-image: none;
-}
-
-.workspace-switcher .workspace-add-button:active image {
-  margin: 1px 0 -1px;
+.budgie-panel .workspace-switcher .workspace-add-button {
+  min-height: 24px;
+  min-width: 24px;
+  padding: 0;
 }
 
 .budgie-panel .workspace-switcher .workspace-icon-button {
@@ -7470,43 +7302,43 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
 }
 
 .top .budgie-panel.dock-mode {
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 18px 18px;
 }
 
 .bottom .budgie-panel.dock-mode {
-  border-radius: 12px 12px 0 0;
+  border-radius: 18px 18px 0 0;
 }
 
 .bottom .budgie-panel.dock-mode .icon-tasklist > box > revealer:first-child > button.launcher {
-  border-top-left-radius: 12px;
+  border-top-left-radius: 18px;
 }
 
 .bottom .budgie-panel.dock-mode .icon-tasklist > box > revealer:last-child > button.launcher {
-  border-top-right-radius: 12px;
+  border-top-right-radius: 18px;
 }
 
 .left .budgie-panel.dock-mode {
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 18px 18px 0;
 }
 
 .left .budgie-panel.dock-mode .icon-tasklist .launcher:first-child {
-  border-top-right-radius: 12px;
+  border-top-right-radius: 18px;
 }
 
 .left .budgie-panel.dock-mode .icon-tasklist .launcher:last-child {
-  border-bottom-right-radius: 12px;
+  border-bottom-right-radius: 18px;
 }
 
 .right .budgie-panel.dock-mode {
-  border-radius: 12px 0 0 12px;
+  border-radius: 18px 0 0 18px;
 }
 
 .right .budgie-panel.dock-mode .icon-tasklist .launcher:first-child {
-  border-top-left-radius: 12px;
+  border-top-left-radius: 18px;
 }
 
 .right .budgie-panel.dock-mode .icon-tasklist .launcher:last-child {
-  border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 18px;
 }
 
 .budgie-panel button {
@@ -7552,7 +7384,7 @@ dialog.background > .dialog-vbox > scrolledwindow > viewport.frame > list {
 }
 
 .budgie-panel .alert {
-  color: #F44336;
+  color: #ea999c;
 }
 
 .budgie-panel > box > widget > widget > image,
@@ -7718,7 +7550,7 @@ frame.raven-frame > border {
 
 .raven {
   background-color: #414559;
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 15px 16px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12);
 }
 
 .raven > box {
@@ -7829,7 +7661,7 @@ calendar.raven-calendar:selected {
 }
 
 .raven-mpris {
-  background-color: #232634;
+  background-color: #292C3C;
   color: #FFFFFF;
 }
 
@@ -7883,15 +7715,28 @@ image.raven-mpris {
   box-shadow: none;
 }
 
-.budgie-notification-window, .budgie-switcher-window, .budgie-osd-window {
+.raven-notifications-group .raven-notifications-group-header {
+  padding-left: 4px;
+}
+
+.raven-notifications-group list > row {
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.raven-notifications-group list > row .notification-clone {
+  padding-left: 4px;
+}
+
+.budgie-notification-window, .budgie-switcher, .budgie-switcher-window, .budgie-osd-window {
   background-color: transparent;
 }
 
-.budgie-notification .notification-title, .budgie-switcher .notification-title {
+.budgie-notification .notification-title {
   font-size: 120%;
 }
 
-.budgie-notification .notification-body, .budgie-switcher .notification-body {
+.budgie-notification .notification-body {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -7904,15 +7749,11 @@ image.raven-mpris {
 }
 
 .drop-shadow {
-  margin: 5px 9px;
+  margin: 36px;
   padding: 4px;
   border-radius: 12px;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #414559;
-}
-
-.drop-shadow .linked > button {
-  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 15px 16px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .budgie-session-dialog,
@@ -7920,6 +7761,7 @@ image.raven-mpris {
 .budgie-run-dialog {
   background-color: #414559;
   border: none;
+  box-shadow: none;
   padding: 0;
 }
 
@@ -7929,19 +7771,25 @@ image.raven-mpris {
   padding: 16px;
 }
 
-.budgie-session-dialog.background, .budgie-session-dialog > decoration,
+.budgie-session-dialog.background, .budgie-session-dialog.background.csd > decoration,
 .budgie-polkit-dialog.background,
-.budgie-polkit-dialog > decoration,
+.budgie-polkit-dialog.background.csd > decoration,
 .budgie-run-dialog.background,
-.budgie-run-dialog > decoration {
+.budgie-run-dialog.background.csd > decoration {
   border-radius: 12px;
 }
 
-.budgie-session-dialog > decoration,
-.budgie-polkit-dialog > decoration,
-.budgie-run-dialog > decoration {
+.budgie-session-dialog.background,
+.budgie-polkit-dialog.background,
+.budgie-run-dialog.background {
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.budgie-session-dialog.background.csd > decoration,
+.budgie-polkit-dialog.background.csd > decoration,
+.budgie-run-dialog.background.csd > decoration {
   border: none;
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 15px 16px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12);
 }
 
 .budgie-session-dialog label:not(:last-child),
@@ -7953,24 +7801,55 @@ image.raven-mpris {
   font-size: 120%;
 }
 
-.budgie-session-dialog .linked.horizontal > button,
-.budgie-polkit-dialog .linked.horizontal > button,
-.budgie-run-dialog .linked.horizontal > button {
+.budgie-session-dialog buttonbox.linked > button,
+.budgie-polkit-dialog buttonbox.linked > button,
+.budgie-run-dialog buttonbox.linked > button {
   padding: 8px 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 0;
 }
 
-.budgie-session-dialog .linked.horizontal > button:first-child,
-.budgie-polkit-dialog .linked.horizontal > button:first-child,
-.budgie-run-dialog .linked.horizontal > button:first-child {
-  border-bottom-left-radius: 12px;
+.budgie-session-dialog buttonbox.linked > button.suggested-action:not(:disabled),
+.budgie-polkit-dialog buttonbox.linked > button.suggested-action:not(:disabled),
+.budgie-run-dialog buttonbox.linked > button.suggested-action:not(:disabled) {
+  color: #f1b08d;
 }
 
-.budgie-session-dialog .linked.horizontal > button:last-child,
-.budgie-polkit-dialog .linked.horizontal > button:last-child,
-.budgie-run-dialog .linked.horizontal > button:last-child {
+.budgie-session-dialog buttonbox.linked > button.destructive-action:not(:disabled),
+.budgie-polkit-dialog buttonbox.linked > button.destructive-action:not(:disabled),
+.budgie-run-dialog buttonbox.linked > button.destructive-action:not(:disabled) {
+  color: #ea999c;
+}
+
+.budgie-session-dialog buttonbox.linked > button:first-child,
+.budgie-polkit-dialog buttonbox.linked > button:first-child,
+.budgie-run-dialog buttonbox.linked > button:first-child {
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 0;
+}
+
+.budgie-session-dialog buttonbox.linked > button:last-child,
+.budgie-polkit-dialog buttonbox.linked > button:last-child,
+.budgie-run-dialog buttonbox.linked > button:last-child {
   border-bottom-right-radius: 12px;
+  border-top-right-radius: 0;
+}
+
+.budgie-power-dialog .titlebar, .budgie-power-dialog .titlebar:backdrop {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.budgie-power-dialog.background {
+  border-radius: 16px;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.budgie-power-dialog.background.csd > decoration {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 15px 16px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12);
 }
 
 .budgie-polkit-dialog .message {
@@ -7978,7 +7857,7 @@ image.raven-mpris {
 }
 
 .budgie-polkit-dialog .failure {
-  color: #F44336;
+  color: #ea999c;
 }
 
 .budgie-polkit-dialog > box > grid {
@@ -8051,7 +7930,7 @@ wnck-pager:active {
 }
 
 wnck-pager:selected {
-  background-color: #FF8A65;
+  background-color: #f1b08d;
 }
 
 #xfce4-mpc-plugin-26 > frame > border {
@@ -8092,7 +7971,7 @@ window#whiskermenu-window > frame > border {
   margin: 4px;
   border: none;
   background-color: #303446;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
 window#whiskermenu-window box.categories > button.radio {
@@ -8261,14 +8140,34 @@ menubar.-vala-panel-background > menuitem:disabled {
 #login_window,
 #shutdown_dialog,
 #restart_dialog {
-  margin: 8px;
   border-radius: 6px;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #414559;
+  color: #FFFFFF;
 }
 
 #content_frame {
   padding-bottom: 16px;
+}
+
+#login_window GtkComboBox {
+  background: none;
+}
+
+#login_window GtkComboBox .button, #login_window GtkComboBox .button:hover, #login_window GtkComboBox .button:active, #login_window GtkComboBox .button:focus {
+  padding: 0;
+  background: none;
+  border-style: none;
+  box-shadow: none;
+}
+
+#user_image {
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#user_image_border {
+  border-radius: 3px;
 }
 
 #buttonbox_frame {
@@ -8281,14 +8180,18 @@ menubar.-vala-panel-background > menuitem:disabled {
 }
 
 #buttonbox_frame button:not(:disabled) {
-  color: #FF8A65;
+  color: #f1b08d;
+}
+
+#greeter_infobar {
+  font-weight: bold;
 }
 
 /********
  * Nemo *
  ********/
 .nemo-window .primary-toolbar {
-  background-color: #232634;
+  background-color: #292C3C;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   padding: 2px 3px;
 }
@@ -8355,7 +8258,7 @@ menubar.-vala-panel-background > menuitem:disabled {
 }
 
 .nemo-window .nemo-inactive-pane .view:not(:selected) {
-  background-color: #232634;
+  background-color: #292C3C;
 }
 
 .nemo-window .nemo-window-pane widget.entry {
@@ -8387,7 +8290,7 @@ menubar.-vala-panel-background > menuitem:disabled {
 
 .places-treeview {
   -NemoPlacesTreeView-disk-full-bg-color: #6e717e;
-  -NemoPlacesTreeView-disk-full-fg-color: #FF8A65;
+  -NemoPlacesTreeView-disk-full-fg-color: #f1b08d;
   -NemoPlacesTreeView-disk-full-bar-width: 2px;
   -NemoPlacesTreeView-disk-full-bar-radius: 0;
   -NemoPlacesTreeView-disk-full-bottom-padding: 1px;
@@ -8413,7 +8316,7 @@ text widgets and the like base background color */
 @define-color theme_base_color #303446;
 /*
 base background color of selections */
-@define-color theme_selected_bg_color #FF8A65;
+@define-color theme_selected_bg_color #f1b08d;
 /*
 text/foreground color of selections */
 @define-color theme_selected_fg_color rgba(0, 0, 0, 0.87);
@@ -8425,7 +8328,7 @@ text foreground color of insensitive widgets */
 @define-color insensitive_fg_color rgba(255, 255, 255, 0.5);
 /*
 insensitive text widgets and the like base background color */
-@define-color insensitive_base_color #232634;
+@define-color insensitive_base_color #292C3C;
 /*
 widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color #FFFFFF;
@@ -8440,7 +8343,7 @@ text widgets and the like base background color on backdrop windows */
 @define-color theme_unfocused_base_color #303446;
 /*
 base background color of selections on backdrop windows */
-@define-color theme_unfocused_selected_bg_color #FF8A65;
+@define-color theme_unfocused_selected_bg_color #f1b08d;
 /*
 text/foreground color of selections on backdrop windows */
 @define-color theme_unfocused_selected_fg_color rgba(0, 0, 0, 0.87);
@@ -8455,9 +8358,9 @@ widgets main borders color on backdrop windows */
 @define-color unfocused_borders rgba(255, 255, 255, 0.12);
 /*
 these are pretty self explicative */
-@define-color warning_color #FBC02D;
-@define-color error_color #F44336;
-@define-color success_color #66BB6A;
+@define-color warning_color #ebd6ab;
+@define-color error_color #ea999c;
+@define-color success_color #aed594;
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
@@ -8465,15 +8368,15 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_unfocused_title rgba(255, 255, 255, 0.7);
 @define-color wm_highlight rgba(255, 255, 255, 0.1);
 @define-color wm_border #0a0a0e;
-@define-color wm_bg #232634;
+@define-color wm_bg #292C3C;
 @define-color wm_unfocused_bg #303446;
 @define-color wm_button_icon white;
-@define-color wm_button_close_hover_bg #e78284;
-@define-color wm_button_close_active_bg #dd4f51;
-@define-color wm_button_max_hover_bg #a6d189;
-@define-color wm_button_max_active_bg #85c05d;
-@define-color wm_button_min_hover_bg #e5c890;
-@define-color wm_button_min_active_bg #d9af5e;
+@define-color wm_button_close_hover_bg #fd5f51;
+@define-color wm_button_close_active_bg #fc2714;
+@define-color wm_button_max_hover_bg #38c76a;
+@define-color wm_button_max_active_bg #2b9751;
+@define-color wm_button_min_hover_bg #fdbe04;
+@define-color wm_button_min_active_bg #c29102;
 /*
 FIXME this is really an API */
 @define-color content_view_bg #303446;
@@ -8481,9 +8384,9 @@ FIXME this is really an API */
 /* Very contrasty background for text views (@theme_text_color foreground) */
 @define-color text_view_bg #303446;
 @define-color budgie_tasklist_indicator_color rgba(255, 255, 255, 0.3);
-@define-color budgie_tasklist_indicator_color_active #FF8A65;
-@define-color budgie_tasklist_indicator_color_active_window #9a5c4e;
-@define-color budgie_tasklist_indicator_color_attention #FBC02D;
+@define-color budgie_tasklist_indicator_color_active #f1b08d;
+@define-color budgie_tasklist_indicator_color_active_window #927164;
+@define-color budgie_tasklist_indicator_color_attention #ebd6ab;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;
 @define-color STRAWBERRY_500 #F15D22;
